@@ -164,14 +164,13 @@ ol, ul { list-style: none; }
 
 .reveal-toggle {
   display: inline-flex; align-items: center; gap: .7em;
-  background: rgba(7,11,16,.28);
+  background: rgba(7,11,16,.42);
   border: 1px solid rgba(236,233,227,.28);
   padding: .55em .7em .55em 1em;
   border-radius: 999px;
   font-family: var(--f-label); text-transform: uppercase;
   font-stretch: 78%; font-weight: 560; letter-spacing: .14em; font-size: .72rem;
   cursor: pointer;
-  backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
   transition: background-color .4s var(--ease), border-color .4s var(--ease), color .4s var(--ease);
 }
 .reveal-toggle:hover { border-color: rgba(236,233,227,.6); }
