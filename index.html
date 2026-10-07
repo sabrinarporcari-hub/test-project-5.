@@ -1,0 +1,868 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Al Maryah Island · AI Lifestyle Library</title>
+<meta name="description" content="One exceptional day on Al Maryah Island: the AI lifestyle library, every frame's record, and the system that makes it repeatable. TBWA\RAAD for Mubadala.">
+<meta name="theme-color" content="#070b10">
+<link rel="preload" href="assets/fonts/archivo-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/sourceserif4-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/img/gallery/w01-recovery-moment.jpg" as="image">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<a class="skip" href="#threshold">Skip the gallery</a>
+
+<!-- ============ THE EXHIBIT ============ -->
+<section class="exhibit" id="exhibit" aria-roledescription="carousel" aria-label="The library: one exceptional day">
+  <header class="exhibit__top">
+    <p class="wordmark"><span>Al Maryah Island</span><span class="wordmark__sub">AI Lifestyle Library</span></p>
+    <button class="reveal-toggle" type="button" aria-pressed="false" aria-controls="record">
+      <span class="reveal-toggle__label">Behind the image</span>
+      <kbd>I</kbd>
+    </button>
+  </header>
+
+  <div class="stage" data-stage>
+    <div class="plates" data-plates></div>
+    <div class="hover-zone" data-hover-zone aria-hidden="true"></div>
+
+    <aside class="record" id="record" aria-live="polite" aria-label="Behind the image" data-record>
+      <div class="record__inner" data-record-inner></div>
+    </aside>
+
+    <button class="nav-arrow nav-arrow--prev" type="button" data-prev aria-label="Previous image">
+      <svg viewBox="0 0 40 80" aria-hidden="true"><path d="M30 6 L8 40 L30 74"/></svg>
+    </button>
+    <button class="nav-arrow nav-arrow--next" type="button" data-next aria-label="Next image">
+      <svg viewBox="0 0 40 80" aria-hidden="true"><path d="M10 6 L32 40 L10 74"/></svg>
+    </button>
+  </div>
+
+  <footer class="exhibit__bar">
+    <div class="caption" data-caption aria-live="polite">
+      <span class="caption__hour" data-cap-hour>07:00</span>
+      <span class="caption__text">
+        <span class="caption__world" data-cap-world></span>
+        <span class="caption__title" data-cap-title></span>
+      </span>
+    </div>
+    <div class="dayline" data-dayline role="group" aria-label="Jump to a moment in the day">
+      <div class="dayline__track"></div>
+      <span class="dayline__end dayline__end--start">07:00</span>
+      <span class="dayline__end dayline__end--end">22:00</span>
+    </div>
+    <p class="counter" aria-live="off"><span data-count-now>01</span><span class="counter__sep">/</span><span data-count-all>10</span></p>
+  </footer>
+  <a class="scroll-cue" href="#threshold">How it was made</a>
+</section>
+
+<!-- ============ CHAPTER RAIL ============ -->
+<nav class="rail" aria-label="Chapters" data-rail>
+  <ol>
+    <li><a href="#direction">Creative direction</a></li>
+    <li><a href="#cast">Cast</a></li>
+    <li><a href="#locations">Locations</a></li>
+    <li><a href="#wardrobe">Wardrobe</a></li>
+    <li><a href="#prompt">Prompt architecture</a></li>
+    <li><a href="#generation">AI generation</a></li>
+    <li><a href="#selection">Selection</a></li>
+    <li><a href="#retouch">Retouching</a></li>
+    <li><a href="#library">Asset library</a></li>
+    <li class="rail__gap"><a href="#system">The system</a></li>
+    <li><a href="#workflow">Workflow</a></li>
+    <li><a href="#scale">Scale</a></li>
+  </ol>
+</nav>
+
+<main>
+
+<!-- ============ THRESHOLD ============ -->
+<section class="threshold" id="threshold">
+  <div class="threshold__statement">
+    <h2 class="display display--xl">None of these were photographed.</h2>
+    <p class="lead">As real as a shoot. Yours forever.</p>
+  </div>
+
+  <div class="bar wrap">
+    <figure class="bar__figure">
+      <img src="assets/img/story/brand-guidelines-photography.jpg" width="3255" height="1375" loading="lazy" alt="The Al Maryah Island photography pages from the brand guidelines: a grid of lifestyle photographs of residents, workers and visitors on the island.">
+      <figcaption>Brand Guidelines 6.01–6.02</figcaption>
+    </figure>
+    <div class="bar__text">
+      <h3 class="display display--m">Your photography is the bar</h3>
+      <p class="lead">Same look. Same island. Only the people are AI.</p>
+    </div>
+  </div>
+
+  <div class="params wrap">
+    <h3 class="display display--s">With clear parameters</h3>
+    <dl class="params__list">
+      <div><dt>42 distinct images</dt><dd>Seven per world. No repeats.</dd></div>
+      <div><dt>As real as a shoot</dt><dd>At least equal to your past campaigns.</dd></div>
+      <div><dt>Recognisably Al Maryah</dt><dd>Real places, referenced on site.</dd></div>
+      <div><dt>Culturally exact</dt><dd>Emirati dress worn right. By far the hardest constraint.</dd></div>
+      <div><dt>100% yours</dt><dd>Owned, perpetual, royalty-free.</dd></div>
+      <div><dt>Built for every channel</dt><dd>Hi-res, low-res and open files.</dd></div>
+    </dl>
+  </div>
+
+  <div class="stakes wrap">
+    <div class="stakes__risk">
+      <h3 class="display display--s">We can’t afford to get it wrong</h3>
+      <dl class="risk-list">
+        <div><dt>The AI look</dt><dd>Waxy skin. Light from nowhere.</dd></div>
+        <div><dt>Invented places</dt><dd>Beautiful, but not Al Maryah.</dd></div>
+        <div><dt>Cultural errors</dt><dd>A shayla worn wrong is noticed first.</dd></div>
+        <div><dt>Rights grey zones</dt><dd>Images you can’t fully use.</dd></div>
+      </dl>
+    </div>
+    <div class="triptych">
+      <p class="triptych__title">Built to preserve three things</p>
+      <figure><img src="assets/img/story/pillar-island.jpg" width="844" height="1424" loading="lazy" alt="Glass towers of Al Maryah Island rising above palms and the water."><figcaption><strong>The island</strong>Real places. Never invented.</figcaption></figure>
+      <figure><img src="assets/img/story/pillar-people.jpg" width="844" height="1424" loading="lazy" alt="An Emirati woman in a black abaya and shayla with a bronze scarf smiles on the waterfront at golden hour."><figcaption><strong>The people</strong>A cast that reflects the UAE.</figcaption></figure>
+      <figure><img src="assets/img/story/pillar-craft.jpg" width="844" height="1424" loading="lazy" alt="Close-up of a hand pouring Arabic coffee from a brass dallah into a small cup, dates beside it."><figcaption><strong>The craft</strong>Human hands on every frame.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 1 · CREATIVE DIRECTION ============ -->
+<section class="chapter" id="direction" data-chapter>
+  <header class="chapter__head wrap">
+    <h2 class="display display--l">One exceptional day</h2>
+    <p class="lead">42 moments. One day on the island. One story.</p>
+  </header>
+
+  <ol class="idea-chain wrap" aria-label="From brand idea to creative idea">
+    <li><span class="idea-chain__k">Your brand idea</span><span class="idea-chain__v">An exceptional address</span></li>
+    <li><span class="idea-chain__k">Your mission</span><span class="idea-chain__v">A 24/7 world-class destination</span></li>
+    <li><span class="idea-chain__k">Our idea</span><span class="idea-chain__v">One exceptional day</span></li>
+  </ol>
+
+  <div class="day wrap">
+    <h3 class="display display--s day__title">07:00 to 22:00. Six worlds. 42 moments.</h3>
+    <div class="worlds" data-worlds>
+      <article class="world is-open" tabindex="0" style="--echo:#9acaeb">
+        <img src="assets/img/story/world-01-wellness.jpg" width="600" height="1026" loading="lazy" alt="A woman resting on a pool deck at sunrise.">
+        <div class="world__meta">
+          <p class="world__hour">07:00</p>
+          <h3 class="world__name">Wellness &amp; Leisure</h3>
+          <p class="world__pillar">Exceptional Living · 8 settings</p>
+          <ol class="world__moments"><li>Fitness lifestyle</li><li>Wellness treatment</li><li>Relaxation</li><li>Social fitness</li><li>Personal wellbeing</li><li>Movement</li><li>Recovery moment</li></ol>
+        </div>
+      </article>
+      <article class="world" tabindex="0" style="--echo:#86aed0">
+        <img src="assets/img/story/world-02-business.jpg" width="600" height="1026" loading="lazy" alt="Two men shaking hands in a glass tower lobby.">
+        <div class="world__meta">
+          <p class="world__hour">09:00</p>
+          <h3 class="world__name">Business &amp; Professional</h3>
+          <p class="world__pillar">Exceptional Commerce · 9 settings</p>
+          <ol class="world__moments"><li>Executive arrival</li><li>Premium office</li><li>Business meeting</li><li>Informal collaboration</li><li>Coffee between meetings</li><li>Business hospitality</li><li>After-work transition</li></ol>
+        </div>
+      </article>
+      <article class="world" tabindex="0" style="--echo:#ef7a5f">
+        <img src="assets/img/story/world-03-retail.jpg" width="600" height="1026" loading="lazy" alt="A woman in a shayla testing a fragrance.">
+        <div class="world__meta">
+          <p class="world__hour">13:00</p>
+          <h3 class="world__name">Shopping &amp; Retail</h3>
+          <p class="world__pillar">Exceptional Living · 8 settings</p>
+          <ol class="world__moments"><li>Luxury browsing</li><li>Fashion discovery</li><li>Fragrance moment</li><li>Personal shopping</li><li>Friends shopping</li><li>Product detail</li><li>Retail to lifestyle</li></ol>
+        </div>
+      </article>
+      <article class="world" tabindex="0" style="--echo:#e6bb72">
+        <img src="assets/img/story/world-04-waterfront.jpg" width="600" height="1026" loading="lazy" alt="A couple walking the promenade at golden hour.">
+        <div class="world__meta">
+          <p class="world__hour">17:30</p>
+          <h3 class="world__name">Waterfront &amp; Outdoor</h3>
+          <p class="world__pillar">Exceptional Living · 8 settings</p>
+          <ol class="world__moments"><li>Waterfront walk</li><li>Afternoon activity</li><li>Family outdoors</li><li>Couple by the water</li><li>Social gathering</li><li>Golden hour promenade</li><li>Evening view</li></ol>
+        </div>
+      </article>
+      <article class="world" tabindex="0" style="--echo:#d2a89b">
+        <img src="assets/img/story/world-05-dining.jpg" width="600" height="1026" loading="lazy" alt="A woman laughing at a candlelit waterfront dinner.">
+        <div class="world__meta">
+          <p class="world__hour">20:00</p>
+          <h3 class="world__name">Dining &amp; Hospitality</h3>
+          <p class="world__pillar">Exceptional Hospitality · 8 settings</p>
+          <ol class="world__moments"><li>Fine dining</li><li>Casual dining</li><li>Coffee or patisserie</li><li>Business lunch</li><li>Couple dining</li><li>Table detail</li><li>Evening atmosphere</li></ol>
+        </div>
+      </article>
+      <article class="world" tabindex="0" style="--echo:#c9aaa3">
+        <img src="assets/img/story/world-06-living.jpg" width="600" height="1026" loading="lazy" alt="An Emirati family at home at night.">
+        <div class="world__meta">
+          <p class="world__hour">22:00</p>
+          <h3 class="world__name">Luxury Living</h3>
+          <p class="world__pillar">Exceptional Hospitality · 8 settings</p>
+          <ol class="world__moments"><li>Premium arrival</li><li>Personal downtime</li><li>Couple lifestyle</li><li>Family lifestyle</li><li>Fashion-led moment</li><li>Private hospitality</li><li>Elevated evening</li></ol>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <div class="method wrap">
+    <h3 class="display display--s">Three disciplines. One production system.</h3>
+    <dl class="method__list">
+      <div><dt>Cast</dt><dd><strong>Who is in every frame.</strong> 24 AI characters across your six audiences. Culturally exact, fully owned.</dd></div>
+      <div><dt>Island tech</dt><dd><strong>Where every frame is anchored.</strong> The real island, captured on site and produced on Omni.</dd></div>
+      <div><dt>Craft</dt><dd><strong>How every frame is made.</strong> Directed like a shoot. Explored wide. Finished by human hands.</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ============ 2 · CAST ============ -->
+<section class="chapter" id="cast" data-chapter>
+  <header class="chapter__head wrap">
+    <h2 class="display display--l">A cast that belongs on the island</h2>
+    <p class="lead">We cast AI characters who fit the island’s audiences, built from your own brand photography.</p>
+  </header>
+
+  <div class="split wrap">
+    <figure class="split__media">
+      <img src="assets/img/story/casting-board.jpg" width="1024" height="1536" loading="lazy" alt="AI casting board: a grid of twenty-four AI-generated faces, men and women of Emirati, Arab, South Asian, African and European appearance, each on a grey backdrop.">
+      <figcaption>AI casting board · 24 characters</figcaption>
+    </figure>
+    <div class="split__text">
+      <p class="figure-num"><span>24</span>4 for each of your six audiences: enough to cast any frame, from a solo moment to a family of four.</p>
+      <ol class="steps">
+        <li><h3>Lock</h3><p>Every face AI-generated, screened for likeness and fixed once. Fully owned, no buyouts.</p></li>
+        <li><h3>Combine</h3><p>Grouped into couples, families, colleagues and friends. Each face recurs across the day.</p></li>
+        <li><h3>Adapt</h3><p>Make-up, wardrobe and hairstyle restyled for context. Emirati dress checked by a cultural reviewer.</p></li>
+      </ol>
+      <dl class="rules">
+        <div><dt>100% AI-generated</dt><dd>Every character is generated. No real person used as reference.</dd></div>
+        <div><dt>Likeness check</dt><dd>Faces screened for resemblance to real people before approval.</dd></div>
+        <div><dt>Usage control</dt><dd>No talent buyouts. Every likeness owned by Mubadala.</dd></div>
+      </dl>
+    </div>
+  </div>
+
+  <div class="sheets">
+    <div class="wrap sheets__head">
+      <h3 class="display display--s">Character sheets</h3>
+      <p class="note">100% AI-generated. No real person used as reference. Approved by you at Gate 1.</p>
+    </div>
+    <ul class="sheets__row" data-drag-scroll tabindex="0" aria-label="Character sheets">
+      <li><img src="assets/img/story/cast-emirati-family.jpg" width="720" height="1080" loading="lazy" alt="Character sheet: an Emirati family of four on a grey backdrop, parents in abaya and kandura with a son and daughter."><p>The Emirati family</p></li>
+      <li><img src="assets/img/story/cast-professional.jpg" width="1024" height="1536" loading="lazy" alt="Character sheet: a woman in a brown trouser suit, arms folded, on a grey backdrop."><p>The professional</p></li>
+      <li><img src="assets/img/story/cast-gcc-visitors.jpg" width="1024" height="1536" loading="lazy" alt="Character sheet: a young couple in neutral casual clothes on a grey backdrop."><p>The GCC visitors</p></li>
+      <li><img src="assets/img/story/cast-tourists.jpg" width="1024" height="1536" loading="lazy" alt="Character sheet: a young couple of tourists in casual clothes on a grey backdrop."><p>The tourists</p></li>
+      <li><img src="assets/img/story/cast-friends.jpg" width="1024" height="1536" loading="lazy" alt="Character sheet: four friends in casual clothes standing together on a grey backdrop."><p>The friends</p></li>
+      <li><img src="assets/img/story/cast-resident.jpg" width="1024" height="1536" loading="lazy" alt="Character sheet: a young man in a navy sweater and khaki trousers on a grey backdrop."><p>The resident</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ 3 · LOCATIONS ============ -->
+<section class="chapter" id="locations" data-chapter>
+  <header class="chapter__head wrap">
+    <h2 class="display display--l">We start on the island</h2>
+    <p class="lead">Align the project. Capture the island. Before any image is made.</p>
+  </header>
+
+  <div class="recce wrap">
+    <figure class="recce__media">
+      <img src="assets/img/story/island-recce-aerial.jpg" width="900" height="1238" loading="lazy" alt="Aerial view of Al Maryah Island at dusk: towers, the curving waterfront and lit terraces.">
+    </figure>
+    <div class="recce__text">
+      <p class="lead">Every image depends on its references. We capture the island before we generate it.</p>
+      <div class="tally">
+        <p><span>6</span> worlds, each mapped to real places on the island.</p>
+        <p><span>49</span> settings, photographed on site and tagged by world. For art direction and accuracy only.</p>
+      </div>
+      <table class="settings-table">
+        <caption class="sr-only">Settings captured per world</caption>
+        <tbody>
+          <tr><th scope="row">07:00</th><td>Wellness</td><td>8 settings</td></tr>
+          <tr><th scope="row">09:00</th><td>Business</td><td>9 settings</td></tr>
+          <tr><th scope="row">13:00</th><td>Retail</td><td>8 settings</td></tr>
+          <tr><th scope="row">17:30</th><td>Waterfront</td><td>8 settings</td></tr>
+          <tr><th scope="row">20:00</th><td>Dining</td><td>8 settings</td></tr>
+          <tr><th scope="row">22:00</th><td>Living</td><td>8 settings</td></tr>
+        </tbody>
+      </table>
+      <dl class="rules rules--tight">
+        <div><dt>Kick-off &amp; plan</dt><dd>Timeline, review moments and approval owners, agreed on day one.</dd></div>
+        <div><dt>Site visit &amp; asset teams</dt><dd>A guided walk with your team. What each world must show, and avoid.</dd></div>
+        <div><dt>Priority shots</dt><dd>Key places and moments, agreed for each world.</dd></div>
+      </dl>
+    </div>
+  </div>
+
+  <div class="ref-to-final wrap" data-ref-final>
+    <h3 class="display display--s">From island reference to final frame</h3>
+    <p class="note">The place is captured first. Only the people and the moment are generated.</p>
+    <div class="ref-to-final__pair">
+      <figure>
+        <img src="assets/img/story/island-reference-promenade.jpg" width="1254" height="1254" loading="lazy" alt="Island reference photograph: the empty promenade at golden hour with its railing, paving and palms, towers ahead.">
+        <figcaption><strong>Island reference · The promenade</strong>Kept from the island: the promenade, railing, paving and palms, and the real sightline to the towers.</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/img/gallery/w04-golden-hour-promenade.jpg" width="1672" height="941" loading="lazy" alt="The final W04 frame: an Emirati couple walking the same promenade at golden hour.">
+        <figcaption><strong>Final frame · W04 Golden hour promenade</strong>Generated for the moment: the cast, their styling, the action and the light of 17:30.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="island-rules wrap">
+    <h3 class="display display--s">How we treat the island</h3>
+    <p class="note">The island is the hero, not a backdrop. Six rules every frame follows.</p>
+    <ol class="numbered">
+      <li><h3>Real places only</h3><p>Every setting exists on the island and is matched to a recce reference. Nothing invented.</p></li>
+      <li><h3>Architecture kept true</h3><p>Towers, bridges, promenade and materials shown as they are built.</p></li>
+      <li><h3>Sightlines that add up</h3><p>What is behind the cast is what you would really see from that spot.</p></li>
+      <li><h3>Light true to the hour</h3><p>Sun, shadows and reflections consistent with the time and the view.</p></li>
+      <li><h3>No third-party brands</h3><p>Tenant logos, signage and AI text removed, unless you clear them.</p></li>
+      <li><h3>At its best, never altered</h3><p>Tidied like a hero shoot: no clutter or construction. Never reshaped.</p></li>
+    </ol>
+    <p class="checked">Checked at Gate 03 · Island &amp; culture, on every image, before you see it</p>
+  </div>
+</section>
+
+<!-- ============ 4 · WARDROBE ============ -->
+<section class="chapter" id="wardrobe" data-chapter>
+  <header class="chapter__head wrap">
+    <h2 class="display display--l">Wardrobe briefs</h2>
+    <p class="lead">Checked by an Emirati cultural reviewer at every gate.</p>
+  </header>
+  <div class="wardrobe wrap">
+    <figure class="wardrobe__fig">
+      <img src="assets/img/story/wardrobe-shayla-abaya.jpg" width="600" height="1065" loading="lazy" alt="Wardrobe reference: an Emirati woman in a black abaya over a cream dress, shayla framing her face, holding a black handbag.">
+      <ul class="wardrobe__notes">
+        <li><strong>Shayla</strong>Wrapped, pinned, framing the face.</li>
+        <li><strong>Abaya</strong>Emirati cut. True weight and drape.</li>
+        <li><strong>Details</strong>Premium, understated.</li>
+      </ul>
+    </figure>
+    <figure class="wardrobe__fig">
+      <img src="assets/img/story/wardrobe-kandura.jpg" width="600" height="1065" loading="lazy" alt="Wardrobe reference: an Emirati man in a white kandura with ghutra and agal and leather sandals.">
+      <ul class="wardrobe__notes">
+        <li><strong>Ghutra &amp; agal</strong>Set the Emirati way.</li>
+        <li><strong>Kandura</strong>Collarless, with the tarboosh.</li>
+        <li><strong>Na’al</strong>True to the occasion.</li>
+      </ul>
+    </figure>
+    <figure class="wardrobe__flat">
+      <img src="assets/img/story/wardrobe-brief-flatlay.jpg" width="1254" height="1254" loading="lazy" alt="Wardrobe brief flat lay: a black abaya with fabric swatches, a shayla, heels, a handbag and accessories arranged on a cream surface.">
+      <figcaption>Everyone else: modest, contemporary, real for the UAE.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ 5 · PROMPT ARCHITECTURE ============ -->
+<section class="chapter chapter--paper" id="prompt" data-chapter>
+  <header class="chapter__head wrap">
+    <h2 class="display display--l">Nothing structurally changes</h2>
+    <p class="lead">Same steps to concept lock. Every shot gets a prompt.</p>
+  </header>
+
+  <ol class="concept-chain wrap">
+    <li><strong>Brand foundation</strong>Your guidelines</li>
+    <li><strong>Direction guide</strong>1×, for approval</li>
+    <li><strong>42-shot matrix</strong>The shot list</li>
+    <li><strong>Style test</strong>6 frames, one per world</li>
+  </ol>
+
+  <div class="matrix wrap">
+    <table>
+      <caption>The 42-shot matrix (excerpt)</caption>
+      <thead><tr><th scope="col">World</th><th scope="col">Moment</th><th scope="col">Setting</th><th scope="col">Cast</th><th scope="col">Time</th><th scope="col">Shot</th><th scope="col">Format</th><th scope="col">Use</th></tr></thead>
+      <tbody>
+        <tr><td>W01 Wellness</td><td>Recovery moment</td><td>Pool deck</td><td>The resident</td><td>07:00</td><td>Medium</td><td>3:2</td><td>Social, CRM</td></tr>
+        <tr><td>W02 Business</td><td>Executive arrival</td><td>Tower lobby</td><td>The professional</td><td>09:00</td><td>Wide</td><td>3:2</td><td>Website hero</td></tr>
+        <tr><td>W04 Waterfront</td><td>Golden hour walk</td><td>Promenade</td><td>Couple, 30s</td><td>17:30</td><td>Medium-wide</td><td>3:2</td><td>OOH, print</td></tr>
+        <tr class="matrix__more"><td colspan="8">… 39 more rows, one per moment</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="inputs wrap">
+    <h3 class="display display--s">Core visual input</h3>
+    <p class="note">Three locked inputs feed every frame.</p>
+    <div class="inputs__row">
+      <figure><img src="assets/img/story/cast-sheet-gcc.jpg" width="1254" height="1254" loading="lazy" alt="Cast reference sheet: three Emirati couples in kandura and abaya standing in a row on a grey backdrop."><figcaption><strong>Cast</strong>Approved AI character sheets.</figcaption></figure>
+      <figure><img src="assets/img/story/wardrobe-brief-flatlay.jpg" width="1254" height="1254" loading="lazy" alt="Wardrobe brief flat lay of an abaya, shayla and accessories."><figcaption><strong>Styling</strong>Wardrobe briefs, culturally reviewed.</figcaption></figure>
+      <figure><img src="assets/img/story/island-reference-promenade.jpg" width="1254" height="1254" loading="lazy" alt="Island reference of the promenade at golden hour."><figcaption><strong>Location</strong>Island references: architecture, light, views.</figcaption></figure>
+    </div>
+  </div>
+
+  <div class="nine wrap" data-nine>
+    <h3 class="display display--s">Master prompt library</h3>
+    <p class="note">Every prompt reads like a photographer’s shot list. Nine parts, every time. All delivered.</p>
+    <div class="nine__grid">
+      <ol class="nine__parts" aria-label="The nine parts of the W04 golden hour promenade prompt">
+        <li data-part="scene"><span>Scene</span>Golden hour promenade, 5:30 pm</li>
+        <li data-part="subject"><span>Subject</span>Couple in their 30s, mid-conversation</li>
+        <li data-part="environment"><span>Environment</span>Waterfront promenade, palms, towers</li>
+        <li data-part="camera"><span>Camera &amp; lens</span>35mm, eye level, f/4</li>
+        <li data-part="lighting"><span>Lighting</span>Low sun, backlit, long shadows</li>
+        <li data-part="mood"><span>Mood</span>Unhurried, warm</li>
+        <li data-part="styling"><span>Styling</span>Linen, understated</li>
+        <li data-part="culture"><span>Cultural context</span>Modest, contemporary UAE</li>
+        <li data-part="output"><span>Output</span>3:2 master</li>
+      </ol>
+      <div class="nine__prompt">
+        <p class="nine__label">Sample prompt record · W04 Golden hour promenade</p>
+        <p class="prompt-text"><span data-seg="scene">Golden hour on the Al Maryah Island waterfront promenade, 5:30 pm.</span> <span data-seg="subject">A couple in their 30s, mid-conversation, walking unhurried.</span> <span data-seg="environment">Palms and towers across the water.</span> <span data-seg="camera">35mm, eye level, f/4.</span> <span data-seg="lighting">Low sun, backlit, long shadows.</span> <span data-seg="mood">Unhurried, warm.</span> <span data-seg="styling">Linen, understated.</span> <span data-seg="culture">Modest, contemporary UAE.</span> <span data-seg="finish">Natural skin, fine grain.</span> <span data-seg="output">3:2 master.</span></p>
+        <p class="nine__excluded"><strong>Excluded</strong> Text, signage, logos, waxy skin, distorted hands.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6 · AI GENERATION ============ -->
+<section class="chapter" id="generation" data-chapter>
+  <header class="chapter__head wrap">
+    <h2 class="display display--l">The shoot, made virtual</h2>
+    <p class="lead">Approved cast, wardrobe, island references and direction, combined in controlled generation rounds.</p>
+  </header>
+
+  <figure class="wide-figure wrap">
+    <img src="assets/img/story/omni-generation-round.jpg" width="1402" height="1122" loading="lazy" alt="A generation round on screen: cast sheet, wardrobe brief and location reference on the left; a grid of outputs of an Emirati couple on the promenade on the right.">
+    <figcaption>
+      <span>Character sheets</span><span>Wardrobe briefs</span><span>Island references</span><span>Shot list</span><span>Style test</span>
+    </figcaption>
+  </figure>
+
+  <div class="omni wrap">
+    <div class="omni__intro">
+      <h3 class="display display--s">Produced on Omni</h3>
+      <p>Omnicom’s intelligent growth platform. Where this library is produced: one secure workspace, 40+ AI models, every stage from brief to delivery.</p>
+      <dl class="rules rules--tight">
+        <div><dt>Mine</dt><dd>Audience and cultural insights. Here: shapes the cast.</dd></div>
+        <div><dt>Make</dt><dd>Design and production consoles. Here: runs the virtual shoot.</dd></div>
+        <div><dt>Manage</dt><dd>Content, activation, performance. Here: holds reviews and the library.</dd></div>
+      </dl>
+    </div>
+    <div class="routes">
+      <h3 class="display display--s">The right model per shot</h3>
+      <table class="routes__table">
+        <caption class="sr-only">Model routes by shot type</caption>
+        <tbody>
+          <tr><th scope="row">Scenes &amp; architecture</th><td>Nano Banana Pro · FLUX · Midjourney</td></tr>
+          <tr><th scope="row">People &amp; lifestyle</th><td>Higgsfield Soul · FLUX · Nano Banana Pro</td></tr>
+          <tr><th scope="row">Products &amp; details</th><td>Seedream · FLUX</td></tr>
+          <tr><th scope="row">Editing &amp; adaptation</th><td>GPT Image · Nano Banana Pro · Adobe Firefly</td></tr>
+          <tr><th scope="row">Retouching &amp; upscale</th><td>Photoshop</td></tr>
+        </tbody>
+      </table>
+      <dl class="rules rules--tight">
+        <div><dt>Rights-first tooling</dt><dd>Only tools that allow full ownership transfer.</dd></div>
+        <div><dt>Model-agnostic</dt><dd>Best cleared model, confirmed at the style test. No tool that limits your rights.</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7 · SELECTION ============ -->
+<section class="chapter" id="selection" data-chapter>
+  <header class="chapter__head wrap chapter__head--split">
+    <h2 class="display display--l">Explore wide.<br>Select ruthlessly.</h2>
+    <p class="lead">Generated in waves. Locked to cast, place and style. You see the best three.</p>
+  </header>
+  <figure class="contact wrap">
+    <img src="assets/img/story/contact-sheet-w04.jpg" width="1774" height="887" loading="lazy" alt="Contact sheet of one generation wave for the W04 golden hour promenade: twelve variations of an Emirati couple walking the promenade.">
+    <figcaption>One wave, one shot: W04 golden hour promenade · Output: 3 options per image · G4 shortlist</figcaption>
+  </figure>
+</section>
+
+<!-- ============ 8 · RETOUCHING ============ -->
+<section class="chapter" id="retouch" data-chapter>
+  <header class="chapter__head wrap">
+    <h2 class="display display--l">From creative master to final master</h2>
+    <p class="lead">Directed like a shoot. Finished by hand.</p>
+  </header>
+
+  <div class="craft wrap">
+    <div class="compare" data-compare style="--pos:50%">
+      <img class="compare__a" src="assets/img/story/raw-generation.jpg" width="1074" height="717" loading="lazy" alt="Raw generation: a tower entrance at dusk with an invented, misspelt third-party brand sign above the door.">
+      <div class="compare__b"><img src="assets/img/story/refined-master.jpg" width="1074" height="717" loading="lazy" alt="Refined master: the same tower entrance with the invented sign retouched out."></div>
+      <span class="compare__tag compare__tag--a">Raw generation</span>
+      <span class="compare__tag compare__tag--b">Refined master</span>
+      <input class="compare__range" type="range" min="0" max="100" value="50" aria-label="Compare raw generation and refined master">
+      <span class="compare__handle" aria-hidden="true"></span>
+    </div>
+    <p class="note compare__note"><strong>Invented sign.</strong> A third-party brand, misspelt. Retouched out. No brands, no AI text.</p>
+
+    <div class="craft__cols">
+      <div>
+        <h3 class="display display--s">In the virtual shoot</h3>
+        <p>We lock the shot: cast, place, composition, light and mood. Details can still be imperfect.</p>
+        <h3 class="display display--s">In craft &amp; realism</h3>
+        <p>Inpainting, retouch, one colour grade and four QA gates turn the selected image into a usable Al Maryah asset.</p>
+      </div>
+      <div>
+        <h3 class="display display--s">What craft fixes</h3>
+        <ul class="fixes"><li>Hands &amp; faces</li><li>Skin &amp; fabric</li><li>Shayla &amp; kandura detail</li><li>Architecture</li><li>Light &amp; shadow</li><li>AI text &amp; signage</li><li>One colour grade</li><li>4K+ upscale</li></ul>
+      </div>
+      <figure class="craft__shot">
+        <img src="assets/img/story/retouch-in-progress.jpg" width="1122" height="1402" loading="lazy" alt="A retoucher at a large monitor working on an image of an Emirati woman in a boutique.">
+        <figcaption>Retouch in progress</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="gates wrap">
+    <h3 class="display display--s">Four gates before you see anything</h3>
+    <ol class="gates__list">
+      <li><span>Gate 01</span><strong>Creative</strong>Right story, right moment.</li>
+      <li><span>Gate 02</span><strong>Realism</strong>Feels photographed.</li>
+      <li><span>Gate 03</span><strong>Island &amp; culture</strong>True to Al Maryah. Dress exact.</li>
+      <li><span>Gate 04</span><strong>Technical</strong>Ready for print and OOH.</li>
+    </ol>
+    <p class="checked">Then yours: 4 revision rounds per image.</p>
+  </div>
+</section>
+
+<!-- ============ 9 · ASSET LIBRARY ============ -->
+<section class="chapter" id="library" data-chapter>
+  <header class="chapter__head wrap">
+    <h2 class="display display--l">A library you own</h2>
+    <p class="lead">Not just the final image: everything needed to open, edit, reproduce and extend it.</p>
+  </header>
+
+  <div class="library wrap">
+    <figure class="library__shot">
+      <img src="assets/img/story/library-delivered.jpg" width="1122" height="1402" loading="lazy" alt="A monitor showing a folder of approved image thumbnails of the island, ready for handover.">
+    </figure>
+    <div class="library__text">
+      <pre class="tree" aria-label="Library folder structure">AMI_AI_Image_Library/
+   01_Masters_HighRes/
+   02_Digital_Web_LowRes/
+   03_Print_OOH/
+   04_Source_Files_PSD/
+   05_Prompts/
+   06_Metadata/</pre>
+      <dl class="rules rules--tight">
+        <div><dt>Naming</dt><dd><code>AMI_W04_GoldenHourPromenade_3x2_Master_v01.tif</code><br>World · moment · ratio · type · version</dd></div>
+        <div><dt>Metadata</dt><dd>World · moment · setting · cast · time · usage · AI flag · rights</dd></div>
+      </dl>
+      <dl class="deliver">
+        <div><dt>42</dt><dd>distinct, approved master images</dd></div>
+        <div><dt>[4K+]</dt><dd>master resolution, 300 dpi</dd></div>
+        <div><dt>PSD · TIFF · JPEG</dt><dd>file formats, sRGB + print profiles</dd></div>
+        <div><dt>3 · 4</dt><dd>options per image · revision rounds per image</dd></div>
+      </dl>
+    </div>
+  </div>
+
+  <div class="asset-files wrap">
+    <h3 class="display display--s">Source files &amp; prompts, for every asset</h3>
+    <div class="asset-files__grid">
+      <figure class="asset-files__thumb">
+        <img src="assets/img/gallery/w04-golden-hour-promenade.jpg" width="1672" height="941" loading="lazy" alt="The W04 golden hour promenade master.">
+        <figcaption><code>AMI_W04_GoldenHourPromenade_3x2_Master_v01</code></figcaption>
+      </figure>
+      <dl class="files">
+        <div><dt>Master files <span>TIF · JPG</span></dt><dd>[4K+] master at 300 dpi, plus hi- and low-res exports.</dd></div>
+        <div><dt>Layered source file <span>PSD</span></dt><dd>Retouch, masks and colour grade on separate, editable layers.</dd></div>
+        <div><dt>Final prompt <span>TXT</span></dt><dd>The approved nine-part prompt, word for word, with every revision.</dd></div>
+        <div><dt>Model &amp; settings <span>JSON</span></dt><dd>Model, version, seed, ratio and settings of the final generation.</dd></div>
+        <div><dt>Input references <span>PDF</span></dt><dd>The cast sheet, wardrobe brief and island references behind the frame.</dd></div>
+        <div><dt>Approvals &amp; rights <span>PDF</span></dt><dd>Revision rounds, gate sign-offs and each tool’s commercial terms.</dd></div>
+      </dl>
+    </div>
+    <p class="note">Plus, for the whole library: locked cast bank · character sheets · wardrobe briefs · direction guide · colour grade (LUT) · master prompt library · metadata schema.</p>
+    <dl class="triad">
+      <div><dt>Rebuild</dt><dd>Recreate or extend any frame from its record.</dd></div>
+      <div><dt>Adapt</dt><dd>New seasons, formats and cast, in the same look.</dd></div>
+      <div><dt>Audit</dt><dd>A clear trail of how every image was made.</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ============ THE SYSTEM ============ -->
+<section class="system" id="system" data-chapter>
+  <header class="chapter__head wrap">
+    <h2 class="display display--l">Not random prompting.<br>A system.</h2>
+    <p class="lead">Eight layers control every frame. Pick a layer to see where it lives in one real record.</p>
+  </header>
+
+  <div class="anatomy wrap" data-anatomy>
+    <ol class="anatomy__layers" role="tablist" aria-label="Layers of the image-building system">
+      <li><button role="tab" aria-selected="true" data-layer="moment"><span>Moment</span><em>What is happening in the scene?</em></button></li>
+      <li><button role="tab" aria-selected="false" data-layer="direction"><span>Direction</span><em>How is the moment interpreted?</em></button></li>
+      <li><button role="tab" aria-selected="false" data-layer="cast"><span>Cast</span><em>Who appears in the scene?</em></button></li>
+      <li><button role="tab" aria-selected="false" data-layer="environment"><span>Environment</span><em>Where does it take place?</em></button></li>
+      <li><button role="tab" aria-selected="false" data-layer="light"><span>Light</span><em>What hour, what light?</em></button></li>
+      <li><button role="tab" aria-selected="false" data-layer="photography"><span>Photography</span><em>Camera, lens, framing, depth, format.</em></button></li>
+      <li><button role="tab" aria-selected="false" data-layer="generation"><span>Generation</span><em>Which models and references?</em></button></li>
+      <li><button role="tab" aria-selected="false" data-layer="craft"><span>Craft</span><em>Selection, retouch, quality control.</em></button></li>
+    </ol>
+    <div class="anatomy__view">
+      <figure class="anatomy__frame">
+        <img src="assets/img/gallery/w04-golden-hour-promenade.jpg" width="1672" height="941" loading="lazy" alt="The W04 golden hour promenade master.">
+      </figure>
+      <div class="anatomy__panel" role="tabpanel" aria-live="polite" data-anatomy-panel></div>
+      <p class="prompt-text prompt-text--dark" data-anatomy-prompt><span data-seg="scene">Golden hour on the Al Maryah Island waterfront promenade, 5:30 pm.</span> <span data-seg="subject">A couple in their 30s, mid-conversation, walking unhurried.</span> <span data-seg="environment">Palms and towers across the water.</span> <span data-seg="camera">35mm, eye level, f/4.</span> <span data-seg="lighting">Low sun, backlit, long shadows.</span> <span data-seg="mood">Unhurried, warm.</span> <span data-seg="styling">Linen, understated.</span> <span data-seg="culture">Modest, contemporary UAE.</span> <span data-seg="finish">Natural skin, fine grain.</span> <span data-seg="output">3:2 master.</span></p>
+    </div>
+  </div>
+  <p class="system__locked wrap"><strong>Locked in every combination:</strong> island references, cultural dress rules, natural skin, one colour grade, fine grain. Change any open layer and the identity holds.</p>
+</section>
+
+<!-- ============ WORKFLOW ============ -->
+<section class="workflow" id="workflow" data-chapter>
+  <header class="chapter__head wrap">
+    <h2 class="display display--l">Omni runs the system.<br>People make the calls.</h2>
+    <p class="lead">A real lifestyle shoot, rebuilt for AI. One platform behind all six stages.</p>
+  </header>
+
+  <div class="pipeline-wrap">
+    <ol class="pipeline" data-pipeline tabindex="0" aria-label="The six-stage workflow">
+      <li>
+        <p class="pipeline__n">01</p><h3>Island recce &amp; setup</h3>
+        <p class="pipeline__people">Site visit with your asset teams.</p>
+        <p class="pipeline__omni">Island references, tagged by world.</p>
+        <p class="pipeline__tasks">Kick-off &amp; briefing · Site visit · Asset-team sessions · Reference library</p>
+        <p class="pipeline__out">Location references</p>
+      </li>
+      <li>
+        <p class="pipeline__n">02</p><h3>Casting &amp; wardrobe</h3>
+        <p class="pipeline__people">Casting calls and cultural review.</p>
+        <p class="pipeline__omni">AI casting bank. Character sheets locked.</p>
+        <p class="pipeline__tasks">AI casting bank · Character sheets · Wardrobe briefs · Cultural review</p>
+        <p class="pipeline__out">6 character sheets</p>
+        <p class="pipeline__gate">G1 Cast &amp; wardrobe</p>
+      </li>
+      <li>
+        <p class="pipeline__n">03</p><h3>Concept definition</h3>
+        <p class="pipeline__people">Direction guide and shot list.</p>
+        <p class="pipeline__omni">Prompt architecture for all 42 shots.</p>
+        <p class="pipeline__tasks">Direction guide · 42-shot matrix · Prompt architecture · Style test</p>
+        <p class="pipeline__out">Guide, shot list, 6 test frames</p>
+        <p class="pipeline__gate">G2 Direction &amp; shot list · G3 Style test</p>
+      </li>
+      <li>
+        <p class="pipeline__n">04</p><h3>Virtual AI shoot</h3>
+        <p class="pipeline__people">The best three chosen per image.</p>
+        <p class="pipeline__omni">Generation waves across 40+ models.</p>
+        <p class="pipeline__tasks">Generation waves · Locked cast &amp; place · Explore, then select · Shortlist</p>
+        <p class="pipeline__out">3 options per image</p>
+        <p class="pipeline__gate">G4 Shortlist</p>
+      </li>
+      <li>
+        <p class="pipeline__n">05</p><h3>Craft &amp; realism</h3>
+        <p class="pipeline__people">Retouch, grade, four QA gates.</p>
+        <p class="pipeline__omni">Inpainting and adaptation models.</p>
+        <p class="pipeline__tasks">Inpainting &amp; retouch · One colour grade · 4 rounds per image · 4 QA gates, upscale</p>
+        <p class="pipeline__out">42 approved masters</p>
+        <p class="pipeline__gate">G5 Final masters</p>
+      </li>
+      <li>
+        <p class="pipeline__n">06</p><h3>Library delivery</h3>
+        <p class="pipeline__people">Handover to your team.</p>
+        <p class="pipeline__omni">Prompts, metadata and versions, packaged.</p>
+        <p class="pipeline__tasks">Hi &amp; low-res exports · Open source files · Prompts &amp; metadata · Naming &amp; handover</p>
+        <p class="pipeline__out">One library, fully yours</p>
+      </li>
+    </ol>
+    <dl class="pipeline__key wrap">
+      <div><dt class="k-people">Our people</dt><dd>Direction and sign-off.</dd></div>
+      <div><dt class="k-omni">On Omni</dt><dd>Generation, consistency, record.</dd></div>
+      <div><dt class="k-out">Output</dt><dd>Every prompt, version and approval on record. Delivered with your library.</dd></div>
+    </dl>
+  </div>
+
+  <div class="plan wrap">
+    <h3 class="display display--s">Hero set of 12 first. Full library in six weeks.</h3>
+    <div class="gantt" role="table" aria-label="Delivery plan, weeks 1 to 6">
+      <div class="gantt__head" role="row"><span role="columnheader" class="sr-only">Task</span><span class="gantt__weeks"><span role="columnheader">Week 1</span><span role="columnheader">Week 2</span><span role="columnheader">Week 3</span><span role="columnheader">Week 4</span><span role="columnheader">Week 5</span><span role="columnheader">Week 6</span></span></div>
+      <div class="gantt__row" role="row"><span role="rowheader">Kick-off, site visit, references</span><span class="gantt__lane" role="cell" aria-label="Week 1" style="--s:0;--e:1"><span class="gantt__bar"></span></span></div>
+      <div class="gantt__row" role="row"><span role="rowheader">Character sheets &amp; wardrobe</span><span class="gantt__lane" role="cell" aria-label="Weeks 1 to 2" style="--s:0;--e:2"><span class="gantt__bar"></span><i class="gantt__gate">G1</i></span></div>
+      <div class="gantt__row" role="row"><span role="rowheader">Direction guide &amp; shot list</span><span class="gantt__lane" role="cell" aria-label="Weeks 1 to 2" style="--s:0.5;--e:2"><span class="gantt__bar"></span><i class="gantt__gate">G2</i></span></div>
+      <div class="gantt__row" role="row"><span role="rowheader">Style test</span><span class="gantt__lane" role="cell" aria-label="Week 2" style="--s:1.4;--e:2"><span class="gantt__bar"></span><i class="gantt__gate">G3</i></span></div>
+      <div class="gantt__row gantt__row--hero" role="row"><span role="rowheader">Shoot · hero set (12)</span><span class="gantt__lane" role="cell" aria-label="Week 3" style="--s:2;--e:3"><span class="gantt__bar"></span><i class="gantt__gate">G4</i></span></div>
+      <div class="gantt__row gantt__row--hero" role="row"><span role="rowheader">Craft &amp; R1–R4 · hero set</span><span class="gantt__lane" role="cell" aria-label="Weeks 3 to 4" style="--s:2.5;--e:4"><span class="gantt__bar"></span></span></div>
+      <div class="gantt__row gantt__row--full" role="row"><span role="rowheader">Shoot · remaining 30</span><span class="gantt__lane" role="cell" aria-label="Week 4" style="--s:3;--e:4"><span class="gantt__bar"></span><i class="gantt__gate">G4</i></span></div>
+      <div class="gantt__row gantt__row--full" role="row"><span role="rowheader">Craft &amp; R1–R4 · remaining 30</span><span class="gantt__lane" role="cell" aria-label="Weeks 4 to 6" style="--s:3.5;--e:5.7"><span class="gantt__bar"></span></span></div>
+      <div class="gantt__row" role="row"><span role="rowheader">Upscale, exports, handover</span><span class="gantt__lane" role="cell" aria-label="Week 6" style="--s:5.2;--e:6"><span class="gantt__bar"></span><i class="gantt__gate">G5</i></span></div>
+    </div>
+    <p class="gantt__legend"><span class="lg lg--gate">Your sign-off</span><span class="lg lg--hero">Hero set · 12 images</span><span class="lg lg--full">Full library · 42 images</span></p>
+  </div>
+</section>
+
+<!-- ============ SCALE ============ -->
+<section class="scale" id="scale" data-chapter>
+  <header class="chapter__head wrap">
+    <h2 class="display display--l">From 1 moment<br>to 250 assets</h2>
+    <p class="lead">Configurable direction: just eight of our settings open 207,360+ combinations. One moment can become 250 assets.</p>
+  </header>
+
+  <div class="config wrap" data-config>
+    <div class="config__locked">
+      <p class="config__k">Locked</p>
+      <p><span>World</span>W04 · Waterfront</p>
+      <p><span>Scene</span>Golden hour promenade</p>
+      <p><span>Hour</span>17:30, low sun</p>
+    </div>
+    <div class="config__stage">
+      <div class="config__frame" data-config-frame>
+        <img src="assets/img/gallery/w04-golden-hour-promenade.jpg" width="1672" height="941" alt="The W04 golden hour promenade master, cropped to the selected format and shot size." data-config-img>
+      </div>
+      <p class="config__brief" data-config-brief></p>
+      <p class="note">Format and shot size are previewed as crops of the approved master. The other settings rewrite the brief for a new generation.</p>
+    </div>
+    <div class="config__controls" data-config-controls></div>
+    <div class="config__total">
+      <p class="config__math" data-config-math></p>
+      <p class="config__count"><span data-config-count>207,360</span>+ combinations</p>
+      <p class="note">From just eight settings, and many more: lens · emotion · hair &amp; make-up · props · festivity …</p>
+    </div>
+  </div>
+
+  <div class="split-stage" data-split>
+    <div class="split-stage__sticky">
+      <div class="split-stage__head wrap">
+        <h3 class="display display--m">One master. Every channel.</h3>
+        <p class="lead">Website, print, CRM, social, display, out of home. Cropped from the master.</p>
+      </div>
+      <div class="channels" data-channels aria-label="One master cropped to every channel format">
+        <figure class="ch" data-ch="web"   style="--ar:16/9"><div class="ch__img"></div><figcaption>Website · homepage hero <span>16:9</span></figcaption></figure>
+        <figure class="ch" data-ch="bb"    style="--ar:21/9"><div class="ch__img"></div><figcaption>OOH · billboard <span>21:9</span></figcaption></figure>
+        <figure class="ch" data-ch="print" style="--ar:2/3"><div class="ch__img"></div><figcaption>Print · magazine spread <span>2:3</span></figcaption></figure>
+        <figure class="ch" data-ch="adshel" style="--ar:2/3"><div class="ch__img"></div><figcaption>OOH · adshel <span>2:3</span></figcaption></figure>
+        <figure class="ch" data-ch="feed"  style="--ar:4/5"><div class="ch__img"></div><figcaption>Social · feed post <span>4:5</span></figcaption></figure>
+        <figure class="ch" data-ch="story" style="--ar:9/16"><div class="ch__img"></div><figcaption>Social · story <span>9:16</span></figcaption></figure>
+        <figure class="ch" data-ch="crm"   style="--ar:3/2"><div class="ch__img"></div><figcaption>CRM · email header <span>3:2</span></figcaption></figure>
+        <figure class="ch" data-ch="dooh"  style="--ar:16/9"><div class="ch__img"></div><figcaption>Digital OOH · mall screen <span>16:9</span></figcaption></figure>
+        <figure class="ch" data-ch="lb"    style="--ar:728/90"><div class="ch__img"></div><figcaption>Display · leaderboard <span>728 × 90</span></figcaption></figure>
+        <figure class="ch" data-ch="hp"    style="--ar:300/600"><div class="ch__img"></div><figcaption>Display · half page <span>300 × 600</span></figcaption></figure>
+        <figure class="ch" data-ch="mpu"   style="--ar:300/250"><div class="ch__img"></div><figcaption>Display · MPU <span>300 × 250</span></figcaption></figure>
+        <figure class="ch" data-ch="sq"    style="--ar:1/1"><div class="ch__img"></div><figcaption>Display · social ad <span>1080 × 1080</span></figcaption></figure>
+        <figure class="ch" data-ch="mob"   style="--ar:320/50"><div class="ch__img"></div><figcaption>Display · mobile <span>320 × 50</span></figcaption></figure>
+      </div>
+      <p class="split-stage__count wrap" data-split-count><span>1</span> master</p>
+    </div>
+  </div>
+
+  <div class="hour wrap" data-hour>
+    <div class="hour__text">
+      <h3 class="display display--m">Same shot. New hour.</h3>
+      <p class="lead">Self-serve variations: once the cast and the place are locked, the light becomes a setting.</p>
+      <label class="hour__control">
+        <span>17:30</span>
+        <input type="range" min="0" max="100" value="0" aria-label="Move the hour from golden hour to night" data-hour-range>
+        <span>Night</span>
+      </label>
+    </div>
+    <div class="hour__frames">
+      <img src="assets/img/gallery/w04-golden-hour-walk.jpg" width="1539" height="1216" loading="lazy" alt="The couple on the promenade at golden hour.">
+      <img class="hour__night" src="assets/img/scale/same-shot-new-hour.jpg" width="600" height="600" loading="lazy" alt="The same couple on the promenade at night, under street lights." data-hour-night>
+    </div>
+  </div>
+
+  <div class="elsewhere wrap">
+    <h3 class="display display--m">Where else could we take this?</h3>
+    <p class="lead">Creating new rituals.</p>
+    <ul class="elsewhere__list">
+      <li><img src="assets/img/scale/always-on-seasonal.jpg" width="600" height="600" loading="lazy" alt="Emirati families sharing an evening meal on a waterfront terrace."><h3>Always-on library</h3><p>Ramadan, Eid, National Day.</p></li>
+      <li><img src="assets/img/scale/same-shot-new-hour.jpg" width="600" height="600" loading="lazy" alt="A couple walking the promenade at night."><h3>Self-serve variations</h3><p>Same shot. New hour.</p></li>
+      <li><img src="assets/img/scale/seventh-world-healthcare.jpg" width="600" height="600" loading="lazy" alt="A doctor talking with an Emirati couple in a bright clinic lounge."><h3>A seventh world</h3><p>Healthcare, same system.</p></li>
+      <li class="elsewhere__motion"><img src="assets/img/scale/motion-from-stills.jpg" width="600" height="600" loading="lazy" alt="A cyclist riding the promenade beneath palms at sunrise."><h3>Motion</h3><p>Stills become start frames.</p></li>
+    </ul>
+    <div class="addons">
+      <p class="addons__title">Once the system exists, more costs less.</p>
+      <ul><li><strong>New image</strong> Inside an existing world.</li><li><strong>Variation</strong> New time, light, cast or occasion.</li><li><strong>Format set</strong> Extra crops or specs.</li><li><strong>Seasonal set</strong> Ramadan, Eid, National Day.</li><li><strong>Seventh world</strong> Exceptional Healthcare.</li><li><strong>Motion from stills</strong> Subtle movement, for screens.</li></ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OWNERSHIP ============ -->
+<section class="own" id="ownership">
+  <div class="wrap">
+    <h2 class="display display--l">100% yours.<br>Anywhere. Forever.</h2>
+    <ul class="own__list">
+      <li><strong>Full ownership</strong>Transferred to Mubadala.</li>
+      <li><strong>Unlimited usage</strong>Worldwide, every channel.</li>
+      <li><strong>Perpetual</strong>No expiry.</li>
+      <li><strong>No recurring costs</strong>No fees, no royalties.</li>
+      <li><strong>Commercial use</strong>Every tool cleared.</li>
+      <li><strong>Source files &amp; prompts</strong>Delivered with every asset.</li>
+      <li><strong>Right to adapt</strong>Modify, distribute, sublicense.</li>
+    </ul>
+    <h3 class="display display--s">Legal &amp; ethical considerations</h3>
+    <dl class="rules rules--four">
+      <div><dt>Reference imagery</dt><dd>Past campaign photos may not be licensed for AI. Used for art direction only.</dd></div>
+      <div><dt>No real likenesses</dt><dd>Every face AI-generated. Screened for resemblance before approval.</dd></div>
+      <div><dt>Children</dt><dd>Generated only. Styled conservatively. Reviewed at every gate.</dd></div>
+      <div><dt>AI labelling</dt><dd>Ready to label if regulation or your policy requires it.</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ============ PROOF ============ -->
+<section class="proof" id="proof">
+  <header class="chapter__head wrap">
+    <h2 class="display display--l">AI creative production, already live</h2>
+    <p class="lead">What we already run for brands in the region.</p>
+  </header>
+  <dl class="proof__stats wrap">
+    <div><dt>20+</dt><dd>Formats from one master. KV resizing at scale. <em>INFINITI</em></dd></div>
+    <div><dt>360°</dt><dd>Camera angles, no shoot. Key visuals generated from brief. <em>INFINITI</em></dd></div>
+    <div><dt>8.3M</dt><dd>Views. AI personas for Gen-Z. <em>AAC</em></dd></div>
+    <div><dt>+44.2%</dt><dd>View-through rate, AI voice-over vs none. <em>Performance Ad Agent</em></dd></div>
+    <div><dt>20+</dt><dd>Arabic dialects. Brand-trained copy agent. <em>INFINITI</em></dd></div>
+    <div><dt>5 days</dt><dd>Concept to episode. AI podcast production. <em>INFINITI</em></dd></div>
+  </dl>
+  <div class="cases" data-drag-scroll tabindex="0" aria-label="Case studies">
+    <article class="case">
+      <img src="assets/img/cases/infiniti-key-visuals.jpg" width="1640" height="877" loading="lazy" alt="INFINITI key visuals: an SUV under a bridge and beside a building, generated in several environments.">
+      <h3>INFINITI Middle East · AI-generated key visuals</h3>
+      <p>Campaign key visuals generated from brief. Any environment, any angle. No shoot. ∞ environments · 360° camera angles · hours, not weeks.</p>
+      <p class="case__rel">The same craft bar behind your 42 masters: generated, then human-finished.</p>
+    </article>
+    <article class="case">
+      <img src="assets/img/cases/infiniti-formats.jpg" width="1794" height="861" loading="lazy" alt="INFINITI digital formats in English and Arabic adapted from one master.">
+      <h3>INFINITI Middle East · One master, 20+ formats</h3>
+      <p>Every digital format adapted from one approved master. English and Arabic. 20+ formats · ≈0 production cost per resize · ∞ variations.</p>
+      <p class="case__rel">Exactly how your library travels: one master, every channel you named.</p>
+    </article>
+    <article class="case">
+      <img src="assets/img/cases/aac-personas.jpg" width="1097" height="979" loading="lazy" alt="AAC's stylised AI Gen-Z personas in sunglasses and streetwear.">
+      <h3>AAC · AI personas for Gen-Z</h3>
+      <p>Consistent AI characters, co-created with real Gen-Zers: their voices, expressions and movements. 8.3M views · 10,000+ likes · 2,000+ shares.</p>
+      <p class="case__rel">Consistent AI characters, campaign after campaign. The discipline behind your cast.</p>
+    </article>
+    <article class="case">
+      <img src="assets/img/cases/du-lifestyle.jpg" width="1530" height="810" loading="lazy" alt="du e-shop lifestyle images of UAE residents with devices on purple backgrounds.">
+      <h3>du · AI lifestyle imagery (pilot)</h3>
+      <p>AI lifestyle imagery for the du e-shop. UAE faces, UAE styling.</p>
+    </article>
+    <article class="case">
+      <img src="assets/img/cases/performance-ad-agent.jpg" width="940" height="911" loading="lazy" alt="KFC social ads produced as performance variants.">
+      <h3>Performance Ad Agent</h3>
+      <p>Copy and voice-over variants, at the speed of performance. +44.2% view-through rate with AI voice-over vs none · Meta +77.8% · TikTok +21.2% · UAC +44%.</p>
+    </article>
+    <article class="case">
+      <img src="assets/img/cases/kfc-creative-intelligence.jpg" width="600" height="514" loading="lazy" alt="A KFC ad annotated by a creative-analysis model.">
+      <h3>KFC · Creative intelligence</h3>
+      <p>Neuroscience pre-testing, before media spend. Also: Pantene, consistent AI virtual influencer · Nissan Patrol, AI production bible · du, AI production guidelines.</p>
+    </article>
+  </div>
+  <p class="proof__also wrap">Also trusted by Omniyat · KFC Arabia · Nissan · NEOM · Etihad Rail · CBD</p>
+</section>
+
+<!-- ============ CLOSE ============ -->
+<section class="close" id="close">
+  <img class="close__bg" src="assets/img/story/island-golden-promenade.jpg" width="2020" height="1136" loading="lazy" alt="">
+  <div class="close__inner wrap">
+    <h2 class="display display--xl">This is not 42 AI images.</h2>
+    <p class="lead">It is your first AI lifestyle shoot. The cast, the look and the prompts stay with you.</p>
+    <dl class="close__pair">
+      <div><dt>The craft</dt><dd>Every image art-directed, generated, selected and finished by human hands.</dd></div>
+      <div><dt>The system</dt><dd>The same method, repeatable across a much larger library.</dd></div>
+    </dl>
+    <a class="back-to-day" href="#exhibit">Back to the day</a>
+  </div>
+  <footer class="credits wrap">
+    <p>Al Maryah Island AI Lifestyle Library · Mubadala · October 2026</p>
+    <p>TBWA\RAAD · Produced on Omni</p>
+  </footer>
+</section>
+
+</main>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
