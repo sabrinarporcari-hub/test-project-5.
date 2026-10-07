@@ -83,10 +83,14 @@
     const W = stage.clientWidth, H = stage.clientHeight;
     const ar = item.w / item.h;
     if (!recordOn) {
-      const cover = Math.abs(Math.log(ar / (W / H))) < 0.42;
+      const cover = isMobile() || Math.abs(Math.log(ar / (W / H))) < 0.42;
       if (cover) {
+        // full-bleed, cropped around the frame's focal point
         const s = Math.max(W / item.w, H / item.h);
-        return { s, x: (W - item.w * s) / 2, y: (H - item.h * s) / 2 };
+        const fx = (item.fx == null ? 50 : item.fx) / 100, fy = (item.fy == null ? 50 : item.fy) / 100;
+        const x = clamp(W / 2 - item.w * s * fx, W - item.w * s, 0);
+        const y = clamp(H / 2 - item.h * s * fy, H - item.h * s, 0);
+        return { s, x, y };
       }
       const s = isMobile()
         ? Math.min(W / item.w, (H * 0.66) / item.h)
@@ -153,8 +157,8 @@
     const meta = [item.hour, item.channel && ('Channel: ' + item.channel), item.audience && ('For: ' + item.audience)].filter(Boolean);
     let html = '';
     html += '<div class="record__head"' + idx() + '>';
-    html += '<p class="label record__kicker">' + esc(item.world + ' · ' + item.worldName + ' · ' + item.pillar) + '</p>';
     html += '<h2 class="record__title">' + esc(item.title) + '</h2>';
+    html += '<p class="label record__world">' + esc(item.world + ' · ' + item.worldName + ' · ' + item.pillar) + '</p>';
     html += '<p class="record__meta">' + meta.map((m) => '<span>' + esc(m) + '</span>').join('') + '</p>';
     html += '</div>';
     const promptGap = !f.prompt;
@@ -540,27 +544,13 @@
       img.style.setProperty('--oy', oy + '%');
       const cast = state.cast.toLowerCase();
       brief.textContent = 'Golden hour promenade, 17:30. ' + (cast === 'family' ? 'A family' : cast === 'friends' ? 'Friends' : cast === 'colleagues' ? 'Colleagues' : cast === 'visitors' ? 'Visitors' : 'A couple') +
-        ', ' + state.wardrobe.toLowerCase() + (state.wardrobe === 'Emirati' ? ' dress' : '') + ', ' + state.action.toLowerCase() + '. ' +
+        ', ' + (state.wardrobe === 'Emirati' ? 'Emirati dress' : state.wardrobe.toLowerCase()) + ', ' + state.action.toLowerCase() + '. ' +
         state.shot + ', ' + state.angle.toLowerCase() + ', ' + state.view.toLowerCase() + ' behind. ' + state.light + '. ' + state.format + '.';
     }
     renderConfig();
     window.addEventListener('resize', sizeFrame, { passive: true });
 
-    let counted = false;
-    new IntersectionObserver((en) => {
-      if (!en[0].isIntersecting || counted) return;
-      counted = true;
-      if (reduced) { count.textContent = total.toLocaleString('en-US'); return; }
-      const t0 = performance.now(), D = 1800;
-      const tick = (t) => {
-        const k = clamp((t - t0) / D, 0, 1);
-        const e = 1 - Math.pow(1 - k, 4);
-        count.textContent = Math.round(1 + (total - 1) * e).toLocaleString('en-US');
-        if (k < 1) requestAnimationFrame(tick);
-      };
-      count.textContent = '1';
-      requestAnimationFrame(tick);
-    }, { threshold: 0.4 }).observe($('.config__total', config));
+    count.textContent = total.toLocaleString('en-US');
   }
 
   /* ======================================================================
@@ -575,9 +565,9 @@
     const ar = (el) => { const [a, b] = getComputedStyle(el).getPropertyValue('--ar').split('/').map(Number); return a / b; };
     // desktop composition, in fractions of the container width
     const WIDE = {
-      web: [0, 0, .30], bb: [0, .19, .30], lb: [0, .335, .30], mob: [0, .385, .16],
+      web: [0, 0, .30], bb: [0, .205, .30], lb: [0, .37, .30], mob: [0, .44, .16],
       print: [.32, 0, .13], adshel: [.47, 0, .13], hp: [.62, 0, .085], story: [.725, 0, .095], feed: [.84, 0, .16],
-      crm: [.32, .215, .2], dooh: [.54, .215, .2], mpu: [.76, .215, .1], sq: [.88, .215, .12]
+      crm: [.32, .255, .2], dooh: [.54, .255, .2], mpu: [.76, .255, .1], sq: [.88, .255, .12]
     };
     const FOCUS = { px: '47%', py: '45%' };
     let targets = [], master = null;
@@ -593,7 +583,7 @@
         const r = ar(el);
         const fh = cw / r;
         out[k] = { x: c * (cw + gap), y: h[c], w: cw, h: fh };
-        h[c] += fh + gap + 4;
+        h[c] += fh + gap + 4 + (W > 560 ? 0 : 0);
       });
       return { rects: out, height: Math.max(...h) };
     }
@@ -610,7 +600,7 @@
           const [x, y, w] = WIDE[f.dataset.ch];
           rects[f.dataset.ch] = { x: x * W, y: y * W, w: w * W, h: (w * W) / ar(f) };
         });
-        height = 0.41 * W;
+        height = 0.5 * W;
       } else {
         const m = masonry(W, W > 560 ? 3 : 2);
         rects = m.rects; height = m.height;

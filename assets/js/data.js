@@ -25,7 +25,7 @@
   window.AMI_GALLERY = [
     {
       // slides 19, 26, 85
-      id: 'w01-recovery', src: 'assets/img/gallery/w01-recovery-moment.jpg', w: 1539, h: 1216,
+      id: 'w01-recovery', fx: 36, fy: 40, src: 'assets/img/gallery/w01-recovery-moment.jpg', w: 1539, h: 1216,
       world: 'W01', worldName: 'Wellness & Leisure', pillar: 'Exceptional Living', hour: '07:00', h24: 7,
       title: 'Recovery moment', channel: 'Key visual', audience: 'Residents', echo: ECHO.sky,
       alt: 'A woman in workout clothes rests on a pool deck at sunrise, towel round her neck and a water bottle in hand, with the island towers reflected in the water behind her.',
@@ -49,7 +49,7 @@
     },
     {
       // slide 25
-      id: 'w01-movement', src: 'assets/img/gallery/w01-movement.jpg', w: 600, h: 900,
+      id: 'w01-movement', fx: 50, fy: 50, src: 'assets/img/gallery/w01-movement.jpg', w: 600, h: 900,
       world: 'W01', worldName: 'Wellness & Leisure', pillar: 'Exceptional Living', hour: '07:00', h24: 7.35,
       title: 'Movement', channel: 'Out of home · Adshel', audience: null, echo: ECHO.sky,
       alt: 'A woman runs along the waterfront promenade in early morning haze, palms on her left and towers in the distance.',
@@ -62,7 +62,7 @@
     },
     {
       // slides 27, 28, 85
-      id: 'w02-arrival', src: 'assets/img/gallery/w02-executive-arrival.jpg', w: 1539, h: 1216,
+      id: 'w02-arrival', fx: 56, fy: 45, src: 'assets/img/gallery/w02-executive-arrival.jpg', w: 1539, h: 1216,
       world: 'W02', worldName: 'Business & Professional', pillar: 'Exceptional Commerce', hour: '09:00', h24: 9,
       title: 'Executive arrival', channel: 'Key visual', audience: 'Professionals, investors', echo: ECHO.oxford,
       alt: 'In a glass-walled tower lobby, a man in a navy suit shakes hands with an Emirati executive in a white kandura and ghutra while colleagues walk past.',
@@ -76,7 +76,7 @@
     },
     {
       // slides 35, 38
-      id: 'w03-fragrance', src: 'assets/img/gallery/w03-fragrance-moment.jpg', w: 1539, h: 1216,
+      id: 'w03-fragrance', fx: 42, fy: 45, src: 'assets/img/gallery/w03-fragrance-moment.jpg', w: 1539, h: 1216,
       world: 'W03', worldName: 'Shopping & Retail', pillar: 'Exceptional Living', hour: '13:00', h24: 13,
       title: 'Fragrance moment', channel: 'Key visual', audience: 'Visitors, tourists', echo: ECHO.vermilion,
       alt: 'Two women in shaylas test perfume at a fragrance boutique counter; one smells a blotter strip while the other smiles, with red roses in the foreground.',
@@ -89,7 +89,7 @@
     },
     {
       // slides 43, 49, 85
-      id: 'w04-walk', src: 'assets/img/gallery/w04-golden-hour-walk.jpg', w: 1539, h: 1216,
+      id: 'w04-walk', fx: 52, fy: 50, src: 'assets/img/gallery/w04-golden-hour-walk.jpg', w: 1539, h: 1216,
       world: 'W04', worldName: 'Waterfront & Outdoor', pillar: 'Exceptional Living', hour: '17:30', h24: 17.5,
       title: 'Golden hour walk', channel: 'Key visual', audience: 'Residents, visitors', echo: ECHO.gold,
       alt: 'A couple in linen walk and laugh along the promenade at golden hour, backlit by a low sun, with palms and towers behind them.',
@@ -103,7 +103,7 @@
     },
     {
       // slides 79, 87, 92, 100, 101: the one frame with a full record
-      id: 'w04-promenade', src: 'assets/img/gallery/w04-golden-hour-promenade.jpg', w: 1672, h: 941,
+      id: 'w04-promenade', fx: 47, fy: 50, src: 'assets/img/gallery/w04-golden-hour-promenade.jpg', w: 1672, h: 941,
       world: 'W04', worldName: 'Waterfront & Outdoor', pillar: 'Exceptional Living', hour: '17:30', h24: 17.85,
       title: 'Golden hour promenade', channel: 'Master', audience: null, echo: ECHO.gold,
       file: 'AMI_W04_GoldenHourPromenade_3x2_Master_v01.tif',
@@ -128,7 +128,7 @@
     },
     {
       // slide 46
-      id: 'w04-family', src: 'assets/img/gallery/w04-family-outdoors.jpg', w: 600, h: 900,
+      id: 'w04-family', fx: 55, fy: 50, src: 'assets/img/gallery/w04-family-outdoors.jpg', w: 600, h: 900,
       world: 'W04', worldName: 'Waterfront & Outdoor', pillar: 'Exceptional Living', hour: '17:30', h24: 18.2,
       title: 'Family outdoors', channel: 'Out of home · Adshel', audience: null, echo: ECHO.gold,
       alt: 'A mother in an abaya walks the promenade at golden hour holding hands with her small daughter, towers and palms behind them.',
@@ -141,7 +141,7 @@
     },
     {
       // slides 51, 53
-      id: 'w05-dinner', src: 'assets/img/gallery/w05-dinner-with-friends.jpg', w: 1539, h: 1216,
+      id: 'w05-dinner', fx: 50, fy: 50, src: 'assets/img/gallery/w05-dinner-with-friends.jpg', w: 1539, h: 1216,
       world: 'W05', worldName: 'Dining & Hospitality', pillar: 'Exceptional Hospitality', hour: '20:00', h24: 20,
       title: 'Dinner with friends', channel: 'Key visual', audience: 'Visitors, tourists', echo: ECHO.bronze,
       alt: 'Three women share dishes by candlelight at a waterfront terrace table at night, laughing, with the lit skyline across the water.',
@@ -154,7 +154,7 @@
     },
     {
       // slide 56
-      id: 'w05-couple', src: 'assets/img/gallery/w05-couple-dining.jpg', w: 600, h: 900,
+      id: 'w05-couple', fx: 50, fy: 50, src: 'assets/img/gallery/w05-couple-dining.jpg', w: 600, h: 900,
       world: 'W05', worldName: 'Dining & Hospitality', pillar: 'Exceptional Hospitality', hour: '20:00', h24: 20.35,
       title: 'Couple dining', channel: 'Out of home · Adshel', audience: null, echo: ECHO.bronze,
       alt: 'A couple share dessert by candlelight at a waterfront table, the illuminated towers behind them.',
@@ -167,7 +167,7 @@
     },
     {
       // slides 59, 63
-      id: 'w06-family', src: 'assets/img/gallery/w06-family-lifestyle.jpg', w: 1539, h: 1216,
+      id: 'w06-family', fx: 48, fy: 50, src: 'assets/img/gallery/w06-family-lifestyle.jpg', w: 1539, h: 1216,
       world: 'W06', worldName: 'Luxury Living', pillar: 'Exceptional Hospitality', hour: '22:00', h24: 22,
       title: 'Family lifestyle', channel: 'Key visual', audience: 'Residents, tourists', echo: ECHO.bronzeOxford,
       alt: 'An Emirati family at home at night: the father pours from a dallah while the mother and children sit together on a sofa, the lit skyline in the window behind.',

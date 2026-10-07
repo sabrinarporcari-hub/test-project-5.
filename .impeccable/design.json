@@ -1,0 +1,670 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-07T08:01:21+00:00",
+  "title": "Design System: Al Maryah Island · AI Lifestyle Library",
+  "extensions": {
+    "colorMeta": {
+      "night-ink": {
+        "role": "neutral",
+        "displayName": "Night Ink",
+        "canonical": "#070b10",
+        "oklch": "oklch(14.7% 0.013 252)",
+        "tonalRamp": [
+          "oklch(15% 0.010 252)",
+          "oklch(26% 0.011 252)",
+          "oklch(37% 0.012 252)",
+          "oklch(48% 0.012 252)",
+          "oklch(60% 0.013 252)",
+          "oklch(72% 0.012 252)",
+          "oklch(84% 0.011 252)",
+          "oklch(95% 0.010 252)"
+        ]
+      },
+      "night-ink-raised": {
+        "role": "neutral",
+        "displayName": "Night Ink Raised",
+        "canonical": "#0c1219",
+        "oklch": "oklch(18.0% 0.017 253)",
+        "tonalRamp": [
+          "oklch(15% 0.013 253)",
+          "oklch(26% 0.014 253)",
+          "oklch(37% 0.015 253)",
+          "oklch(48% 0.017 253)",
+          "oklch(60% 0.017 253)",
+          "oklch(72% 0.016 253)",
+          "oklch(84% 0.014 253)",
+          "oklch(95% 0.013 253)"
+        ]
+      },
+      "night-ink-high": {
+        "role": "neutral",
+        "displayName": "Night Ink High",
+        "canonical": "#131b25",
+        "oklch": "oklch(21.9% 0.023 254)",
+        "tonalRamp": [
+          "oklch(15% 0.018 254)",
+          "oklch(26% 0.019 254)",
+          "oklch(37% 0.021 254)",
+          "oklch(48% 0.022 254)",
+          "oklch(60% 0.022 254)",
+          "oklch(72% 0.021 254)",
+          "oklch(84% 0.019 254)",
+          "oklch(95% 0.018 254)"
+        ]
+      },
+      "oxford": {
+        "role": "secondary",
+        "displayName": "Oxford",
+        "canonical": "#002b49",
+        "oklch": "oklch(28.0% 0.071 245)",
+        "tonalRamp": [
+          "oklch(15% 0.054 245)",
+          "oklch(26% 0.059 245)",
+          "oklch(37% 0.063 245)",
+          "oklch(48% 0.068 245)",
+          "oklch(60% 0.069 245)",
+          "oklch(72% 0.064 245)",
+          "oklch(84% 0.059 245)",
+          "oklch(95% 0.054 245)"
+        ]
+      },
+      "document-grey": {
+        "role": "neutral",
+        "displayName": "Document Grey",
+        "canonical": "#e6e6e4",
+        "oklch": "oklch(92.4% 0.003 106)",
+        "tonalRamp": [
+          "oklch(15% 0.002 106)",
+          "oklch(26% 0.002 106)",
+          "oklch(37% 0.002 106)",
+          "oklch(48% 0.003 106)",
+          "oklch(60% 0.003 106)",
+          "oklch(72% 0.002 106)",
+          "oklch(84% 0.002 106)",
+          "oklch(95% 0.002 106)"
+        ]
+      },
+      "document-grey-deep": {
+        "role": "neutral",
+        "displayName": "Document Grey Deep",
+        "canonical": "#d6d6d3",
+        "oklch": "oklch(87.5% 0.004 106)",
+        "tonalRamp": [
+          "oklch(15% 0.003 106)",
+          "oklch(26% 0.003 106)",
+          "oklch(37% 0.004 106)",
+          "oklch(48% 0.004 106)",
+          "oklch(60% 0.004 106)",
+          "oklch(72% 0.004 106)",
+          "oklch(84% 0.003 106)",
+          "oklch(95% 0.003 106)"
+        ]
+      },
+      "bone-text": {
+        "role": "neutral",
+        "displayName": "Bone Text",
+        "canonical": "#ece9e3",
+        "oklch": "oklch(93.5% 0.009 85)",
+        "tonalRamp": [
+          "oklch(15% 0.007 85)",
+          "oklch(26% 0.007 85)",
+          "oklch(37% 0.008 85)",
+          "oklch(48% 0.008 85)",
+          "oklch(60% 0.008 85)",
+          "oklch(72% 0.008 85)",
+          "oklch(84% 0.007 85)",
+          "oklch(95% 0.007 85)"
+        ]
+      },
+      "mist-text": {
+        "role": "neutral",
+        "displayName": "Mist Text",
+        "canonical": "#b3b6bb",
+        "oklch": "oklch(77.5% 0.008 261)",
+        "tonalRamp": [
+          "oklch(15% 0.006 261)",
+          "oklch(26% 0.006 261)",
+          "oklch(37% 0.007 261)",
+          "oklch(48% 0.008 261)",
+          "oklch(60% 0.008 261)",
+          "oklch(72% 0.007 261)",
+          "oklch(84% 0.006 261)",
+          "oklch(95% 0.006 261)"
+        ]
+      },
+      "slate-text": {
+        "role": "neutral",
+        "displayName": "Slate Text",
+        "canonical": "#858b93",
+        "oklch": "oklch(63.4% 0.014 256)",
+        "tonalRamp": [
+          "oklch(15% 0.011 256)",
+          "oklch(26% 0.011 256)",
+          "oklch(37% 0.012 256)",
+          "oklch(48% 0.013 256)",
+          "oklch(60% 0.013 256)",
+          "oklch(72% 0.012 256)",
+          "oklch(84% 0.011 256)",
+          "oklch(95% 0.011 256)"
+        ]
+      },
+      "paper-ink": {
+        "role": "neutral",
+        "displayName": "Paper Ink",
+        "canonical": "#10161d",
+        "oklch": "oklch(19.7% 0.017 253)",
+        "tonalRamp": [
+          "oklch(15% 0.013 253)",
+          "oklch(26% 0.014 253)",
+          "oklch(37% 0.015 253)",
+          "oklch(48% 0.016 253)",
+          "oklch(60% 0.016 253)",
+          "oklch(72% 0.015 253)",
+          "oklch(84% 0.014 253)",
+          "oklch(95% 0.013 253)"
+        ]
+      },
+      "paper-ink-muted": {
+        "role": "neutral",
+        "displayName": "Paper Ink Muted",
+        "canonical": "#49505a",
+        "oklch": "oklch(42.9% 0.019 257)",
+        "tonalRamp": [
+          "oklch(15% 0.014 257)",
+          "oklch(26% 0.016 257)",
+          "oklch(37% 0.017 257)",
+          "oklch(48% 0.018 257)",
+          "oklch(60% 0.018 257)",
+          "oklch(72% 0.017 257)",
+          "oklch(84% 0.016 257)",
+          "oklch(95% 0.014 257)"
+        ]
+      },
+      "paper-ink-quiet": {
+        "role": "neutral",
+        "displayName": "Paper Ink Quiet",
+        "canonical": "#575e67",
+        "oklch": "oklch(47.9% 0.017 255)",
+        "tonalRamp": [
+          "oklch(15% 0.013 255)",
+          "oklch(26% 0.014 255)",
+          "oklch(37% 0.015 255)",
+          "oklch(48% 0.016 255)",
+          "oklch(60% 0.016 255)",
+          "oklch(72% 0.015 255)",
+          "oklch(84% 0.014 255)",
+          "oklch(95% 0.013 255)"
+        ]
+      },
+      "hairline": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "rgba(236, 233, 227, .14)",
+        "oklch": "oklch(93.5% 0.009 85)",
+        "tonalRamp": [
+          "oklch(15% 0.007 85)",
+          "oklch(26% 0.007 85)",
+          "oklch(37% 0.008 85)",
+          "oklch(48% 0.008 85)",
+          "oklch(60% 0.008 85)",
+          "oklch(72% 0.008 85)",
+          "oklch(84% 0.007 85)",
+          "oklch(95% 0.007 85)"
+        ]
+      },
+      "hairline-strong": {
+        "role": "neutral",
+        "displayName": "Hairline Strong",
+        "canonical": "rgba(236, 233, 227, .32)",
+        "oklch": "oklch(93.5% 0.009 85)",
+        "tonalRamp": [
+          "oklch(15% 0.007 85)",
+          "oklch(26% 0.007 85)",
+          "oklch(37% 0.008 85)",
+          "oklch(48% 0.008 85)",
+          "oklch(60% 0.008 85)",
+          "oklch(72% 0.008 85)",
+          "oklch(84% 0.007 85)",
+          "oklch(95% 0.007 85)"
+        ]
+      },
+      "hairline-ink": {
+        "role": "neutral",
+        "displayName": "Hairline Ink",
+        "canonical": "rgba(16, 22, 29, .16)",
+        "oklch": "oklch(19.7% 0.017 253)",
+        "tonalRamp": [
+          "oklch(15% 0.013 253)",
+          "oklch(26% 0.014 253)",
+          "oklch(37% 0.015 253)",
+          "oklch(48% 0.016 253)",
+          "oklch(60% 0.016 253)",
+          "oklch(72% 0.015 253)",
+          "oklch(84% 0.014 253)",
+          "oklch(95% 0.013 253)"
+        ]
+      },
+      "sky-echo": {
+        "role": "primary",
+        "displayName": "Sky Echo",
+        "canonical": "#9acaeb",
+        "oklch": "oklch(81.7% 0.069 239)",
+        "tonalRamp": [
+          "oklch(15% 0.052 239)",
+          "oklch(26% 0.057 239)",
+          "oklch(37% 0.061 239)",
+          "oklch(48% 0.066 239)",
+          "oklch(60% 0.067 239)",
+          "oklch(72% 0.062 239)",
+          "oklch(84% 0.057 239)",
+          "oklch(95% 0.052 239)"
+        ]
+      },
+      "oxford-echo": {
+        "role": "secondary",
+        "displayName": "Oxford Echo",
+        "canonical": "#86aed0",
+        "oklch": "oklch(73.4% 0.066 245)",
+        "tonalRamp": [
+          "oklch(15% 0.050 245)",
+          "oklch(26% 0.054 245)",
+          "oklch(37% 0.059 245)",
+          "oklch(48% 0.063 245)",
+          "oklch(60% 0.064 245)",
+          "oklch(72% 0.059 245)",
+          "oklch(84% 0.054 245)",
+          "oklch(95% 0.050 245)"
+        ]
+      },
+      "vermilion-echo": {
+        "role": "secondary",
+        "displayName": "Vermilion Echo",
+        "canonical": "#ef7a5f",
+        "oklch": "oklch(70.8% 0.150 34)",
+        "tonalRamp": [
+          "oklch(15% 0.114 34)",
+          "oklch(26% 0.124 34)",
+          "oklch(37% 0.134 34)",
+          "oklch(48% 0.144 34)",
+          "oklch(60% 0.146 34)",
+          "oklch(72% 0.135 34)",
+          "oklch(84% 0.124 34)",
+          "oklch(95% 0.114 34)"
+        ]
+      },
+      "gold-echo": {
+        "role": "primary",
+        "displayName": "Gold Echo",
+        "canonical": "#e6bb72",
+        "oklch": "oklch(81.5% 0.104 80)",
+        "tonalRamp": [
+          "oklch(15% 0.079 80)",
+          "oklch(26% 0.086 80)",
+          "oklch(37% 0.093 80)",
+          "oklch(48% 0.100 80)",
+          "oklch(60% 0.101 80)",
+          "oklch(72% 0.093 80)",
+          "oklch(84% 0.086 80)",
+          "oklch(95% 0.079 80)"
+        ]
+      },
+      "bronze-echo": {
+        "role": "secondary",
+        "displayName": "Bronze Echo",
+        "canonical": "#d2a89b",
+        "oklch": "oklch(76.6% 0.053 38)",
+        "tonalRamp": [
+          "oklch(15% 0.040 38)",
+          "oklch(26% 0.044 38)",
+          "oklch(37% 0.047 38)",
+          "oklch(48% 0.051 38)",
+          "oklch(60% 0.051 38)",
+          "oklch(72% 0.048 38)",
+          "oklch(84% 0.044 38)",
+          "oklch(95% 0.040 38)"
+        ]
+      },
+      "bronze-oxford-echo": {
+        "role": "secondary",
+        "displayName": "Bronze-Oxford Echo",
+        "canonical": "#c9aaa3",
+        "oklch": "oklch(76.3% 0.038 33)",
+        "tonalRamp": [
+          "oklch(15% 0.029 33)",
+          "oklch(26% 0.031 33)",
+          "oklch(37% 0.034 33)",
+          "oklch(48% 0.036 33)",
+          "oklch(60% 0.037 33)",
+          "oklch(72% 0.034 33)",
+          "oklch(84% 0.031 33)",
+          "oklch(95% 0.029 33)"
+        ]
+      },
+      "vermilion": {
+        "role": "tertiary",
+        "displayName": "Vermilion",
+        "canonical": "#d14124",
+        "oklch": "oklch(58.0% 0.185 33)",
+        "tonalRamp": [
+          "oklch(15% 0.122 33)",
+          "oklch(26% 0.132 33)",
+          "oklch(37% 0.143 33)",
+          "oklch(48% 0.153 33)",
+          "oklch(60% 0.155 33)",
+          "oklch(72% 0.144 33)",
+          "oklch(84% 0.132 33)",
+          "oklch(95% 0.122 33)"
+        ]
+      },
+      "vermilion-on-paper": {
+        "role": "tertiary",
+        "displayName": "Vermilion on Paper",
+        "canonical": "#a5321b",
+        "oklch": "oklch(48.7% 0.155 33)",
+        "tonalRamp": [
+          "oklch(15% 0.118 33)",
+          "oklch(26% 0.128 33)",
+          "oklch(37% 0.138 33)",
+          "oklch(48% 0.148 33)",
+          "oklch(60% 0.150 33)",
+          "oklch(72% 0.139 33)",
+          "oklch(84% 0.128 33)",
+          "oklch(95% 0.118 33)"
+        ]
+      },
+      "harbour-blue": {
+        "role": "tertiary",
+        "displayName": "Harbour Blue",
+        "canonical": "#4d7fa3",
+        "oklch": "oklch(57.6% 0.078 241)",
+        "tonalRamp": [
+          "oklch(15% 0.059 241)",
+          "oklch(26% 0.064 241)",
+          "oklch(37% 0.069 241)",
+          "oklch(48% 0.074 241)",
+          "oklch(60% 0.075 241)",
+          "oklch(72% 0.070 241)",
+          "oklch(84% 0.064 241)",
+          "oklch(95% 0.059 241)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Chapter statements (size l); xl, m and s steps exist for threshold/close, sub-sections and small statements."
+      },
+      "display-xl": {
+        "displayName": "Display XL",
+        "purpose": "Threshold statement and closing statement only."
+      },
+      "numeral": {
+        "displayName": "Numeral",
+        "purpose": "Hours, tallies, counts and stats; the day is told in light condensed numerals."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Idea-chain values, anatomy layer value, record title."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Step, case, gate and ownership names."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Italic serif line under every chapter head; max 38ch."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Reading copy; notes cap at 62ch."
+      },
+      "prompt": {
+        "displayName": "Prompt",
+        "purpose": "Generation prompts, the one large serif setting."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Definition terms, table heads, legends, credits, captions heads."
+      }
+    },
+    "fonts": [
+      {
+        "family": "Archivo",
+        "src": "assets/fonts/archivo-var.woff2",
+        "axes": "wght 100-900, wdth 62-125"
+      },
+      {
+        "family": "Source Serif 4",
+        "src": "assets/fonts/sourceserif4-var.woff2 + sourceserif4-italic-var.woff2",
+        "axes": "wght 200-900, opsz auto"
+      }
+    ],
+    "shadows": [
+      {
+        "name": "photo-halo-wordmark",
+        "value": "text-shadow: 0 1px 14px rgba(0,0,0,.45)",
+        "purpose": "Legibility of the wordmark over photographs. Not elevation."
+      },
+      {
+        "name": "photo-halo-hour",
+        "value": "text-shadow: 0 2px 30px rgba(0,0,0,.35)",
+        "purpose": "Legibility of the caption hour over photographs."
+      },
+      {
+        "name": "photo-halo-stroke",
+        "value": "filter: drop-shadow(0 1px 8px rgba(0,0,0,.5))",
+        "purpose": "Legibility of arrow chevrons over photographs."
+      },
+      {
+        "name": "highlight-pad",
+        "value": "box-shadow: 0 0 0 .12em color-mix(in oklab, var(--echo) 18%, transparent)",
+        "purpose": "Extends a highlighted prompt span's tint; a fill, not a shadow."
+      }
+    ],
+    "overlays": [
+      {
+        "name": "scrim-bottom",
+        "value": "linear-gradient(to top, rgba(4,7,10,.72), rgba(4,7,10,0))",
+        "purpose": "Bottom 34% of the exhibit so the caption bar reads on bright frames; fades out in record state."
+      },
+      {
+        "name": "scrim-top",
+        "value": "linear-gradient(to bottom, rgba(4,7,10,.45), rgba(4,7,10,0))",
+        "purpose": "Top 22% of the exhibit behind wordmark and toggle."
+      },
+      {
+        "name": "echo-wash",
+        "value": "color-mix(in oklab, var(--echo) 9%, var(--ink))",
+        "purpose": "Whole-exhibit tint while a specimen record is open (7% on the phone bottom sheet)."
+      },
+      {
+        "name": "dim-leaving",
+        "value": "filter: brightness(.45)",
+        "purpose": "The outgoing plate recedes instead of the incoming one lifting."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(.16, 1, .3, 1)",
+        "purpose": "Default slow exponential ease-out for every transition and wipe."
+      },
+      {
+        "name": "ease-io",
+        "value": "cubic-bezier(.65, 0, .35, 1)",
+        "purpose": "Symmetric ease for the looping image drift only."
+      },
+      {
+        "name": "t-slow",
+        "value": "1100ms",
+        "purpose": "Scene changes: plate moves, echo wash, scrims."
+      },
+      {
+        "name": "record-wipe",
+        "value": "clip-path inset 1000ms ease, 120ms delay; rows cascade 260ms + i x 34ms",
+        "purpose": "Specimen record wipe and row stagger."
+      },
+      {
+        "name": "reveal",
+        "value": "opacity 1s + translateY(24px) 1.2s; mask variant clip-path 1.4s",
+        "purpose": "Scroll reveal; content is visible without JS."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "all durations .01ms, reveals disabled, scroll story unpinned",
+        "purpose": "prefers-reduced-motion: reduce."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "phone",
+        "value": "760px",
+        "purpose": "max-width: exhibit bar to two rows, record to bottom sheet, worlds stack."
+      },
+      {
+        "name": "split",
+        "value": "900px",
+        "purpose": "min-width: two-up splits and split chapter heads."
+      },
+      {
+        "name": "wide",
+        "value": "1000px",
+        "purpose": "min-width: anatomy, stakes and wardrobe multi-column."
+      },
+      {
+        "name": "config",
+        "value": "1100px",
+        "purpose": "min-width: configurator two-column areas."
+      },
+      {
+        "name": "rail",
+        "value": "1180px",
+        "purpose": "max-width: chapter rail removed."
+      },
+      {
+        "name": "pipeline",
+        "value": "1400px",
+        "purpose": "min-width: pipeline stops scrolling and fits the container."
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Reveal Toggle",
+      "kind": "button",
+      "refersTo": "reveal-toggle",
+      "description": "The single top-right control that opens a frame's specimen record; pill, outlined, inverts when pressed.",
+      "html": "<div class=\"ds-toggle-stage\"><button class=\"ds-toggle\" type=\"button\" aria-pressed=\"false\" onclick=\"this.setAttribute('aria-pressed',this.getAttribute('aria-pressed')!=='true')\">Behind the image <kbd>I</kbd></button></div>",
+      "css": ".ds-toggle-stage{--ink:#070b10;--text:#ece9e3;--text-2:#b3b6bb;--text-3:#858b93;--line:rgba(236,233,227,.14);--line-strong:rgba(236,233,227,.32);--echo:#9acaeb;--paper:#e6e6e4;--f-label:'Archivo','Arial Narrow',sans-serif;--f-read:'Source Serif 4',Cambria,Georgia,serif;--ease:cubic-bezier(.16,1,.3,1);background:var(--ink);color:var(--text);padding:24px;font-family:var(--f-read);}.ds-toggle{display:inline-flex;align-items:center;gap:.7em;background:rgba(7,11,16,.28);color:var(--text);border:1px solid rgba(236,233,227,.28);padding:.55em .7em .55em 1em;border-radius:999px;font-family:var(--f-label);font-stretch:78%;font-weight:560;text-transform:uppercase;letter-spacing:.14em;font-size:.72rem;cursor:pointer;transition:background-color .4s var(--ease),border-color .4s var(--ease),color .4s var(--ease);}.ds-toggle:hover{border-color:rgba(236,233,227,.6);}.ds-toggle:focus-visible{outline:1.5px solid var(--echo);outline-offset:4px;}.ds-toggle[aria-pressed=\"true\"]{background:var(--text);color:var(--ink);border-color:var(--text);}.ds-toggle kbd{font-family:var(--f-label);font-size:.7rem;letter-spacing:0;display:inline-grid;place-items:center;width:1.7em;height:1.7em;border:1px solid currentColor;border-radius:50%;opacity:.7;}"
+    },
+    {
+      "name": "Outline Link Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Pill link for the few navigational calls to action (Back to the day); fills bone on hover.",
+      "html": "<div class=\"ds-out-stage\"><a class=\"ds-btn-outline\" href=\"#\">Back to the day</a></div>",
+      "css": ".ds-out-stage{--ink:#070b10;--text:#ece9e3;--text-2:#b3b6bb;--text-3:#858b93;--line:rgba(236,233,227,.14);--line-strong:rgba(236,233,227,.32);--echo:#9acaeb;--paper:#e6e6e4;--f-label:'Archivo','Arial Narrow',sans-serif;--f-read:'Source Serif 4',Cambria,Georgia,serif;--ease:cubic-bezier(.16,1,.3,1);background:var(--ink);color:var(--text);padding:24px;font-family:var(--f-read);}.ds-btn-outline{display:inline-block;color:var(--text);text-decoration:none;font-family:var(--f-label);font-stretch:78%;font-weight:560;text-transform:uppercase;letter-spacing:.14em;font-size:.74rem;border:1px solid var(--line-strong);padding:.8em 1.2em;border-radius:999px;transition:background-color .3s,color .3s;}.ds-btn-outline:hover{background:var(--text);color:var(--ink);}.ds-btn-outline:focus-visible{outline:1.5px solid var(--echo);outline-offset:4px;}"
+    },
+    {
+      "name": "Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Serif option pill in the scale configurator; pressed inverts to bone; dashed variant marks non-interactive overflow.",
+      "html": "<div class=\"ds-chip-stage\"><button class=\"ds-chip\" aria-pressed=\"true\">Option A</button> <button class=\"ds-chip\" aria-pressed=\"false\">Option B</button> <button class=\"ds-chip\" aria-pressed=\"false\">Option C</button> <span class=\"ds-chip ds-chip--more\">+ more</span></div>",
+      "css": ".ds-chip-stage{--ink:#070b10;--text:#ece9e3;--text-2:#b3b6bb;--text-3:#858b93;--line:rgba(236,233,227,.14);--line-strong:rgba(236,233,227,.32);--echo:#9acaeb;--paper:#e6e6e4;--f-label:'Archivo','Arial Narrow',sans-serif;--f-read:'Source Serif 4',Cambria,Georgia,serif;--ease:cubic-bezier(.16,1,.3,1);background:var(--ink);color:var(--text);padding:24px;font-family:var(--f-read);}.ds-chip{display:inline-block;border:1px solid var(--line);background:none;color:var(--text-2);cursor:pointer;padding:.32em .7em;border-radius:999px;font-family:var(--f-read);font-size:.86rem;line-height:1.2;transition:border-color .25s,background-color .25s,color .25s;}.ds-chip:hover{border-color:var(--line-strong);color:var(--text);}.ds-chip:focus-visible{outline:1.5px solid var(--echo);outline-offset:4px;}.ds-chip[aria-pressed=\"true\"]{background:var(--text);border-color:var(--text);color:var(--ink);}.ds-chip--more{border-style:dashed;color:var(--text-3);cursor:default;}"
+    },
+    {
+      "name": "Day Line",
+      "kind": "nav",
+      "refersTo": "tick-tip",
+      "description": "The exhibit's timeline navigation: 07:00 to 22:00 hairline with one tick per frame; current tick grows and takes the echo.",
+      "html": "<div class=\"ds-day-stage\"><div class=\"ds-dayline\"><span class=\"ds-dayline__track\"></span><button class=\"ds-tick\" style=\"left:4%\"><span class=\"ds-tick__tip\">07:00 Recovery moment</span></button><button class=\"ds-tick\" style=\"left:30%\" aria-current=\"true\"><span class=\"ds-tick__tip\">09:00 Executive arrival</span></button><button class=\"ds-tick\" style=\"left:62%\"><span class=\"ds-tick__tip\">17:30 Golden hour promenade</span></button><button class=\"ds-tick\" style=\"left:92%\"><span class=\"ds-tick__tip\">22:00 Family lifestyle</span></button><span class=\"ds-end ds-end--s\">07:00</span><span class=\"ds-end ds-end--e\">22:00</span></div></div>",
+      "css": ".ds-day-stage{--ink:#070b10;--text:#ece9e3;--text-2:#b3b6bb;--text-3:#858b93;--line:rgba(236,233,227,.14);--line-strong:rgba(236,233,227,.32);--echo:#9acaeb;--paper:#e6e6e4;--f-label:'Archivo','Arial Narrow',sans-serif;--f-read:'Source Serif 4',Cambria,Georgia,serif;--ease:cubic-bezier(.16,1,.3,1);background:var(--ink);color:var(--text);padding:24px;font-family:var(--f-read);}.ds-dayline{position:relative;height:72px;}.ds-dayline__track{position:absolute;left:0;right:0;bottom:24px;height:1px;background:rgba(236,233,227,.32);}.ds-end{position:absolute;bottom:0;font-family:var(--f-label);font-stretch:80%;font-size:.7rem;letter-spacing:.1em;color:rgba(236,233,227,.66);font-variant-numeric:tabular-nums;}.ds-end--s{left:0;}.ds-end--e{right:0;}.ds-tick{position:absolute;bottom:24px;width:22px;margin-left:-11px;height:34px;background:none;border:0;padding:0;cursor:pointer;}.ds-tick::before{content:'';position:absolute;left:50%;bottom:0;width:1px;height:9px;background:rgba(236,233,227,.7);transition:height .6s var(--ease),background-color .6s var(--ease);}.ds-tick:hover::before{height:16px;background:var(--text);}.ds-tick[aria-current=\"true\"]::before{height:26px;width:2px;background:var(--echo);}.ds-tick:focus-visible{outline:1.5px solid var(--echo);outline-offset:4px;}.ds-tick__tip{position:absolute;bottom:38px;left:50%;transform:translate(-50%,4px);white-space:nowrap;pointer-events:none;opacity:0;font-family:var(--f-label);font-stretch:80%;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;background:var(--text);color:var(--ink);padding:.35em .6em;border-radius:2px;transition:opacity .25s var(--ease),transform .35s var(--ease);}.ds-tick:hover .ds-tick__tip,.ds-tick:focus-visible .ds-tick__tip{opacity:1;transform:translate(-50%,0);}"
+    },
+    {
+      "name": "Ruled Definition Row",
+      "kind": "card",
+      "refersTo": "hairline",
+      "description": "The system's only container: hairline top rule, caps label term, serif definition. Used for parameters, method, files, proof.",
+      "html": "<div class=\"ds-rules-stage\"><dl class=\"ds-rules\"><div><dt>Cast</dt><dd>AI characters who fit the island’s audiences, built from your own brand photography.</dd></div><div><dt>Locations</dt><dd>Align the project. Capture the island. Before any image is made.</dd></div><div><dt>Lighting direction</dt><dd class=\"ds-gap\">Not yet recorded</dd></div></dl></div>",
+      "css": ".ds-rules-stage{--ink:#070b10;--text:#ece9e3;--text-2:#b3b6bb;--text-3:#858b93;--line:rgba(236,233,227,.14);--line-strong:rgba(236,233,227,.32);--echo:#9acaeb;--paper:#e6e6e4;--f-label:'Archivo','Arial Narrow',sans-serif;--f-read:'Source Serif 4',Cambria,Georgia,serif;--ease:cubic-bezier(.16,1,.3,1);background:var(--ink);color:var(--text);padding:24px;font-family:var(--f-read);}.ds-rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0 2.4rem;margin:0;}.ds-rules>div{border-top:1px solid var(--line);padding:1rem 0 1.6rem;display:grid;gap:.4rem;}.ds-rules dt{font-family:var(--f-label);font-stretch:80%;font-weight:560;text-transform:uppercase;letter-spacing:.12em;font-size:.72rem;color:var(--text);}.ds-rules dd{margin:0;color:var(--text-2);}.ds-rules .ds-gap{color:var(--text-3);font-family:var(--f-label);font-stretch:80%;font-weight:560;text-transform:uppercase;letter-spacing:.12em;font-size:.72rem;font-size:.7rem;letter-spacing:.1em;}.ds-rules .ds-gap::before{content:'';display:inline-block;width:14px;height:1px;background:currentColor;vertical-align:middle;margin-right:.6em;}"
+    },
+    {
+      "name": "Specimen Record",
+      "kind": "custom",
+      "refersTo": "record",
+      "description": "Signature: a frame's catalogue entry, echo-ruled at its left edge, wiping in from the right; undocumented fields shown as gaps.",
+      "html": "<div class=\"ds-rec-stage\"><button class=\"ds-rec-btn\" onclick=\"this.nextElementSibling.classList.toggle('is-open')\">Toggle record</button><aside class=\"ds-record is-open\"><div class=\"ds-record__in\"><h3 class=\"ds-record__title\">Golden hour promenade</h3><p class=\"ds-record__world\">W04 · Waterfront &amp; Outdoor · Exceptional Living</p><dl class=\"ds-record__prompt\"><dt>Final generation prompt</dt><dd>Golden hour on the Al Maryah Island waterfront promenade, 5:30 pm. A couple in their 30s, mid-conversation, walking unhurried. Palms and towers across the water. 35mm, eye level, f/4.</dd></dl><dl class=\"ds-record__grid\"><div><dt>Time of day</dt><dd>17:30</dd></div><div><dt>Composition</dt><dd>Medium-wide</dd></div><div class=\"ds-gap\"><dt>AI model</dt><dd>Not yet recorded</dd></div><div><dt>File</dt><dd>3:2 master</dd></div></dl></div></aside></div>",
+      "css": ".ds-rec-stage{--ink:#070b10;--text:#ece9e3;--text-2:#b3b6bb;--text-3:#858b93;--line:rgba(236,233,227,.14);--line-strong:rgba(236,233,227,.32);--echo:#9acaeb;--paper:#e6e6e4;--f-label:'Archivo','Arial Narrow',sans-serif;--f-read:'Source Serif 4',Cambria,Georgia,serif;--ease:cubic-bezier(.16,1,.3,1);background:var(--ink);color:var(--text);padding:24px;font-family:var(--f-read);}.ds-rec-stage{--echo:#e6bb72;min-height:340px;}.ds-rec-btn{font-family:var(--f-label);font-stretch:80%;font-weight:560;text-transform:uppercase;letter-spacing:.12em;font-size:.72rem;background:none;border:0;color:var(--text-2);text-decoration:underline;text-underline-offset:.3em;cursor:pointer;padding:0;margin-bottom:1rem;}.ds-rec-btn:hover{color:var(--text);}.ds-record{max-width:520px;clip-path:inset(0 0 0 100%);transition:clip-path 1000ms var(--ease);}.ds-record.is-open{clip-path:inset(0 0 0 0);}.ds-record__in{padding-left:28px;border-left:1px solid color-mix(in oklab,var(--echo) 55%,transparent);}.ds-record__world{margin:0 0 1.2rem;font-family:var(--f-label);font-stretch:80%;font-weight:560;text-transform:uppercase;letter-spacing:.12em;font-size:.74rem;color:var(--echo);}.ds-record__title{margin:0 0 .5rem;font-family:var(--f-label);font-stretch:66%;font-weight:560;text-transform:uppercase;font-size:2.2rem;line-height:.95;}.ds-record dl{margin:0;}.ds-record dt{font-family:var(--f-label);font-stretch:80%;font-weight:560;text-transform:uppercase;letter-spacing:.12em;font-size:.72rem;font-size:.7rem;color:var(--text-3);margin-bottom:.3rem;}.ds-record dd{margin:0;}.ds-record__prompt{margin-bottom:1.4rem;}.ds-record__prompt dd{font-style:italic;font-weight:360;font-size:1.08rem;line-height:1.5;}.ds-record__grid{display:grid;grid-template-columns:1fr 1fr;gap:1.05rem 1.6rem;}.ds-record__grid>div{border-top:1px solid var(--line);padding-top:.6rem;}.ds-record__grid dd{font-size:.95rem;line-height:1.4;}.ds-record .ds-gap dd{color:var(--text-3);font-family:var(--f-label);font-stretch:80%;text-transform:uppercase;letter-spacing:.1em;font-size:.7rem;}"
+    },
+    {
+      "name": "Range Slider",
+      "kind": "input",
+      "refersTo": "hairline-strong",
+      "description": "Hairline track, bone circular thumb, no fill; used for the hour-of-day blend.",
+      "html": "<div class=\"ds-range-stage\"><label class=\"ds-range\"><span>Day</span><input type=\"range\" min=\"0\" max=\"100\" value=\"40\"><span>Option C</span></label></div>",
+      "css": ".ds-range-stage{--ink:#070b10;--text:#ece9e3;--text-2:#b3b6bb;--text-3:#858b93;--line:rgba(236,233,227,.14);--line-strong:rgba(236,233,227,.32);--echo:#9acaeb;--paper:#e6e6e4;--f-label:'Archivo','Arial Narrow',sans-serif;--f-read:'Source Serif 4',Cambria,Georgia,serif;--ease:cubic-bezier(.16,1,.3,1);background:var(--ink);color:var(--text);padding:24px;font-family:var(--f-read);}.ds-range{display:grid;grid-template-columns:auto 1fr auto;gap:1rem;align-items:center;font-family:var(--f-label);font-stretch:75%;text-transform:uppercase;letter-spacing:.1em;font-size:.78rem;color:var(--text-2);}.ds-range input{-webkit-appearance:none;appearance:none;background:none;width:100%;height:28px;cursor:pointer;}.ds-range input::-webkit-slider-runnable-track{height:1px;background:var(--line-strong);}.ds-range input::-moz-range-track{height:1px;background:var(--line-strong);}.ds-range input::-webkit-slider-thumb{-webkit-appearance:none;width:18px;height:18px;margin-top:-9px;border-radius:50%;background:var(--text);border:0;}.ds-range input::-moz-range-thumb{width:18px;height:18px;border-radius:50%;background:var(--text);border:0;}.ds-range input:focus-visible{outline:1.5px solid var(--echo);outline-offset:4px;}"
+    },
+    {
+      "name": "Exhibit Caption",
+      "kind": "custom",
+      "refersTo": "numeral",
+      "description": "Bottom-left of the exhibit: large light condensed hour beside the serif-italic moment title with the echo-coloured world line beneath it.",
+      "html": "<div class=\"ds-cap-stage\"><div class=\"ds-caption\"><span class=\"ds-caption__hour\">17:30</span><span class=\"ds-caption__text\"><span class=\"ds-caption__title\">Golden hour promenade</span><span class=\"ds-caption__world\">W04 · Waterfront &amp; Outdoor</span></span></div></div>",
+      "css": ".ds-cap-stage{--ink:#070b10;--text:#ece9e3;--text-2:#b3b6bb;--text-3:#858b93;--line:rgba(236,233,227,.14);--line-strong:rgba(236,233,227,.32);--echo:#9acaeb;--paper:#e6e6e4;--f-label:'Archivo','Arial Narrow',sans-serif;--f-read:'Source Serif 4',Cambria,Georgia,serif;--ease:cubic-bezier(.16,1,.3,1);background:var(--ink);color:var(--text);padding:24px;font-family:var(--f-read);}.ds-cap-stage{--echo:#e6bb72;}.ds-caption{display:flex;align-items:flex-end;gap:16px;}.ds-caption__hour{font-family:var(--f-label);font-stretch:62%;font-weight:300;font-size:5rem;line-height:.78;font-variant-numeric:tabular-nums;letter-spacing:-.01em;}.ds-caption__text{display:flex;flex-direction:column;gap:.3em;padding-bottom:.1em;}.ds-caption__world{font-family:var(--f-label);font-stretch:80%;font-weight:560;text-transform:uppercase;letter-spacing:.14em;font-size:.7rem;color:var(--echo);}.ds-caption__title{font-family:var(--f-read);font-style:italic;font-weight:360;font-size:1.3rem;line-height:1.15;}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Night Gallery Day",
+    "overview": "The library is hung as an exhibition after dark. A near-black, Oxford-tinted ground (night ink) holds photographs edge to edge, and the site is navigated as a single day on the island, 07:00 to 22:00. Every frame is both a picture on a wall and a specimen with a catalogue entry: hover or tap and the image steps back while its record wipes in from the edge, tinted by that frame's own colour echo.\n\nThe interface is made of type and hairlines, nothing else. Condensed Archivo capitals carry everything that is data (hours, labels, counts, parameter names, chapter statements); Source Serif 4 carries everything that is said (leads, prompts, reading copy), most often in italic. Structure comes from 1px rules at low opacity, never from cards, panels or fills. Density is gallery-sparse in the exhibit and catalogue-dense in the records and process chapters, where definition lists, numbered steps and tables sit on ruled rows.\n\nColour is mostly withheld. The ground is night ink, text is warm bone, and a single accent at a time comes from the photograph on show: the active frame (or the active chapter) sets `--echo`, and only that echo colours the current tick, the record's edge, the world line and the focus ring. One chapter (Prompt Architecture) flips to a neutral light document grey with ink text, following the source deck's own alternation of dark and light layouts.",
+    "keyCharacteristics": [
+      "Night-ink ground (#070b10), photographs full-bleed or at full column width, square-cornered.",
+      "Two-family type system: condensed Archivo caps for data, Source Serif 4 (often italic) for voice.",
+      "Hairline rules (1px, 14% bone) as the only structural device; no cards, no panels.",
+      "One live accent at a time, the frame's colour echo, set per frame or per chapter.",
+      "Slow exponential easing and clip-path wipes; content arrives, it never bounces."
+    ],
+    "rules": [
+      {
+        "name": "The One Echo Rule",
+        "body": "Only one accent is live on a screen, and it comes from the photograph: the frame's echo in the exhibit, gold in System and Scale, Oxford on the document chapter. Sky Echo is the default, not a second accent.",
+        "section": "colors"
+      },
+      {
+        "name": "The Rebind Rule",
+        "body": "A chapter changes world by re-binding tokens (`--line`, `--text-2`, `--text-3`, `--echo`) on its container, never by writing new component colours. The paper chapter is the reference.",
+        "section": "colors"
+      },
+      {
+        "name": "The Data Wears Caps Rule",
+        "body": "Anything that is a value, a time, a count or a field name is set in condensed Archivo with tabular figures; anything that is a sentence is set in Source Serif 4. A field name never appears in serif and a statement never in labels.",
+        "section": "typography"
+      },
+      {
+        "name": "The Narrow Not Heavy Rule",
+        "body": "Emphasis in Archivo comes from width (62% to 80%) and size; weight stays between 300 and 600.",
+        "section": "typography"
+      },
+      {
+        "name": "The Lights Down Rule",
+        "body": "To bring one thing forward, dim everything else; never lift the thing with a shadow. The record wipes in while the frame darkens behind it.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** set every surface on night ink (#070b10) and let photographs run edge to edge or full column width with square corners.",
+      "**Do** take the accent from the frame on show by setting `--echo` on the container; use gold for System and Scale and Oxford on the document chapter.",
+      "**Do** set times, counts, field names and labels in condensed Archivo caps with tabular figures, and sentences in Source Serif 4.",
+      "**Do** group content with 1px hairline top rules and generous vertical rhythm instead of containers.",
+      "**Do** show missing data as \"Not yet recorded\" in slate label type; never omit the field.",
+      "**Do** move with the exponential ease (`cubic-bezier(.16, 1, .3, 1)`) at slow durations (about 1100ms for scene changes) and reveal with clip-path wipes; honour reduced motion by cutting all of it."
+    ],
+    "donts": [
+      "**Don't** use cards, panels or filled containers to group content; the ruled row is the container.",
+      "**Don't** use box-shadow for elevation or frosted-glass panels; dim the surroundings instead.",
+      "**Don't** run two accents at once or introduce a colour that is not a frame echo or a defined signal.",
+      "**Don't** round photographs or figures; radius belongs only to pills, dots and 2px tags.",
+      "**Don't** set Archivo bold and wide for emphasis; narrow it and scale it."
+    ]
+  }
+}
